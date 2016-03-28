@@ -17,8 +17,8 @@ Plugin 'altercation/vim-colors-solarized'
 "Plugin 'tpope/vim-dispatch'
 "Plugin 'thoughtbot/vim-rspec'
 
-"Plugin 'tpope/vim-fugitive'			" github interface
-"Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
+Plugin 'tpope/vim-fugitive'			" github interface
+Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
 
 Plugin 'vim-ruby/vim-ruby'			" ruby tool
 Plugin 'fatih/vim-go'				" go-lang tool
@@ -35,7 +35,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-expand-region'
 
 " Requires compile
-"Plugin 'Valloric/YouCompleteMe'                 " code-completion
+Plugin 'Valloric/YouCompleteMe'                 " code-completion
 
 " All Plugins declared above.
 call vundle#end()		" required
@@ -66,6 +66,7 @@ set hlsearch
 set incsearch
 set showmatch
 set shell=/usr/bin/bash
+set clipboard=unnamedplus
 
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
