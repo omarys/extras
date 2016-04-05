@@ -14,9 +14,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'altercation/vim-colors-solarized'
 
-"Plugin 'tpope/vim-dispatch'
-"Plugin 'thoughtbot/vim-rspec'
-
 Plugin 'tpope/vim-fugitive'			" github interface
 Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
 
@@ -29,7 +26,6 @@ Plugin 'tpope/vim-cucumber'			" cucumber script helper
 Plugin 'scrooloose/nerdtree'			" file tree browser
 Plugin 'scrooloose/nerdcommenter'		" commenting tool
 Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
-" Plugin 'scrooloose/syntastic'                   " syntax checker
 Plugin 'SirVer/ultisnips'			" snipping tool - python based
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-expand-region'
@@ -68,10 +64,6 @@ set showmatch
 set shell=/usr/bin/bash
 set clipboard=unnamedplus
 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
 " remap leader key
 let mapleader="\<Space>"
 
@@ -89,25 +81,17 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-" Syntastic settings
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-"let g:syntastic_python_python_exec = '/usr/bin/python3'
-"let g:syntastic_html_tidy_exec = 'libtidy'
-
-" RSpec.vim mappings - uncomment to activate
- "map <Leader>c :call RunCurrentSpecFile()<CR>
- "map <Leader>n :call RunNearestSpec()<CR>
- "map <Leader>l :call RunLastSpec()<CR>
- "map <Leader>a :call RunAllSpecs()<CR>
-
 " NERDTree mapping
 nmap <Leader>t :NERDTree<CR>
 " NERDComment toggle
 nmap <Leader>c :call NERDComment(0, "toggle")<CR>
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
 syntax enable
 set background=dark
 colorscheme solarized
+let g:solarized_termcolors=16
+let g:solarized_termtrans=1
+set t_Co=16
