@@ -11,7 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'
+Plugin 'edkolev/tmuxline.vim'                   " this may not be needed
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'tpope/vim-fugitive'			" github interface
@@ -27,7 +27,7 @@ Plugin 'scrooloose/nerdtree'			" file tree browser
 Plugin 'scrooloose/nerdcommenter'		" commenting tool
 Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
 Plugin 'SirVer/ultisnips'			" snipping tool - python based
-Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'                     " change surrounding marks
 Plugin 'terryma/vim-expand-region'
 
 " Requires compile
@@ -85,6 +85,9 @@ vmap <Leader>P "+P
 nmap <Leader>t :NERDTree<CR>
 " NERDComment toggle
 nmap <Leader>c :call NERDComment(0, "toggle")<CR>
+
+" forced use of python2 interpreter - python3 not compatible
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
