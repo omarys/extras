@@ -81,10 +81,11 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+" You Complete Me restart server mapping
+nmap <Leader>yr :YcmRestartServer<CR>
+
 " NERDTree mapping
 nmap <Leader>t :NERDTree<CR>
-" NERDComment toggle
-nmap <Leader>c :call NERDComment(0, "toggle")<CR>
 
 " forced use of python2 interpreter - python3 not compatible
 let g:ycm_server_python_interpreter = '/usr/bin/python'
