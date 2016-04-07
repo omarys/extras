@@ -28,12 +28,10 @@ Plugin 'scrooloose/nerdcommenter'		" commenting tool
 Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
 Plugin 'mattn/emmet-vim'
 
-Plugin 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'                 " code-completion
 Plugin 'SirVer/ultisnips'			" snipping tool - python based
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'                     " change surrounding marks
-Plugin 'terryma/vim-expand-region'
 
 " All Plugins declared above.
 call vundle#end()		" required
@@ -72,7 +70,7 @@ let mapleader="\<Space>"
 " Save, Quit, Source
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
-nnoremap <Leader>q :q<CR>
+nnoremap <Leader>q :q!<CR>
 nnoremap <Leader>s :source %<CR>
 
 " copy & paste with <Space>p and <Space>y
@@ -95,11 +93,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" make YCM compatible with UltiSnips (using supertab)
-" http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
-let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-TAB>'
+let g:UltiSnipsExpandTrigger = '<C-Space>'
 
 syntax enable
 
