@@ -22,6 +22,7 @@ Plugin 'fatih/vim-go'				" go-lang tool
 Plugin 'elzr/vim-json'  			" JSON highlighting tool
 Plugin 'pangloss/vim-javascript'		" js tool
 Plugin 'tpope/vim-cucumber'			" cucumber script helper
+Plugin 'moll/vim-node'
 
 Plugin 'scrooloose/nerdtree'			" file tree browser
 Plugin 'scrooloose/nerdcommenter'		" commenting tool
@@ -33,22 +34,10 @@ Plugin 'SirVer/ultisnips'			" snipping tool - python based
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'                     " change surrounding marks
 
-" All Plugins declared above.
 call vundle#end()		" required
 filetype plugin indent on	" required
-" To ignore plugin indent changes, instead use:
-" filetype plugin on
-"
-" Brief help
-" :PluginList	- lists configured plugins
-" :PluginInstall	 - installs plugins: append '!' to update or just use
-" :PluginUpdate
-" :PluginSearch foo	- searches for foo; append '!' to refresh local cache
-" :PluginClean		- confirms removal of unused plugins; append '!' to
-" 			  auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+
+syntax enable
 set laststatus=2
 set number
 set expandtab
@@ -90,13 +79,22 @@ nmap <Leader>t :NERDTree<CR>
 " forced use of python2 interpreter - python3 not compatible
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 
+" prettier fonts and shapes on airline status bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+" set to something that shouldn't be used while typeing
+let g:ycm_key_list_previous_completions=['<Up>']
+
+let g:UltiSnipsSnippetsDir = $HOME.'/.vim/UltiSnips/'
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsExpandTrigger = '<C-Space>'
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+let g:UltiSnipsListSnippets = '<C-l>'
+let g:UltiSnipsEditSplit="vertical"
 
-syntax enable
-
+" colorscheme
 set background=dark
 colorscheme solarized
 let g:solarized_termcolors=16
