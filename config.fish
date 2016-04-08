@@ -68,7 +68,6 @@ end
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showstashstate 'yes'
 set __fish_git_prompt_showupstream auto,verbose
-set __fish_git_prompt_color green
 set __fish_git_prompt_color_branch yellow
 set __fish_git_prompt_color_dirtystate red
 
