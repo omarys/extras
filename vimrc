@@ -41,8 +41,8 @@ syntax enable
 set laststatus=2
 set number
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set smarttab
 set noshowmode
 set timeoutlen=250
