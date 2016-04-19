@@ -27,7 +27,6 @@ Plugin 'moll/vim-node'
 Plugin 'scrooloose/nerdtree'			" file tree browser
 Plugin 'scrooloose/nerdcommenter'		" commenting tool
 Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
-Plugin 'mattn/emmet-vim'
 
 Plugin 'Valloric/YouCompleteMe'                 " code-completion
 Plugin 'SirVer/ultisnips'			" snipping tool - python based
@@ -89,8 +88,6 @@ let g:ycm_key_list_previous_completions=['<Up>']
 let g:UltiSnipsSnippetsDir = $HOME.'/.vim/UltiSnips/'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsExpandTrigger = '<C-Space>'
-let g:UltiSnipsJumpForwardTrigger="<C-b>"
-let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 let g:UltiSnipsListSnippets = '<C-l>'
 let g:UltiSnipsEditSplit="vertical"
 
