@@ -91,6 +91,9 @@ let g:UltiSnipsExpandTrigger = '<C-Space>'
 let g:UltiSnipsListSnippets = '<C-l>'
 let g:UltiSnipsEditSplit="vertical"
 
+" fugitive on the statusline - if the plugin is loaded
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
+
 " colorscheme
 set background=dark
 colorscheme solarized
