@@ -17,13 +17,14 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'			" github interface
 Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
 
-Plugin 'vim-ruby/vim-ruby'			" ruby tool
-Plugin 'fatih/vim-go'				" go-lang tool
-Plugin 'elzr/vim-json'  			" JSON highlighting tool
-Plugin 'pangloss/vim-javascript'		" js tool
-Plugin 'tpope/vim-cucumber'			" cucumber script helper
-Plugin 'moll/vim-node'
+"Plugin 'vim-ruby/vim-ruby'			" ruby tool
+"Plugin 'fatih/vim-go'				" go-lang tool
+"Plugin 'elzr/vim-json'  			" JSON highlighting tool
+"Plugin 'pangloss/vim-javascript'		" js tool
+"Plugin 'tpope/vim-cucumber'			" cucumber script helper
+"Plugin 'moll/vim-node'
 
+Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'scrooloose/nerdtree'			" file tree browser
 Plugin 'scrooloose/nerdcommenter'		" commenting tool
 Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
@@ -75,6 +76,9 @@ nmap <Leader>yr :YcmRestartServer<CR>
 " NERDTree mapping
 nmap <Leader>t :NERDTree<CR>
 
+" table mode shortcut
+nmap <Leader>tm :TableModeToggle<CR>
+
 " forced use of python2 interpreter - python3 not compatible
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 
@@ -93,6 +97,9 @@ let g:UltiSnipsEditSplit="vertical"
 
 " fugitive on the statusline - if the plugin is loaded
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
+
+" table mode uses markdown style for separators
+let g:table_mode_corner="|"
 
 " colorscheme
 set background=dark
