@@ -3,6 +3,12 @@
 # Tell Vagrant to use libvirt as it's default provider.
 set -x VAGRANT_DEFAULT_PROVIDER libvirt
 
+# make Vim the default editor
+set -x EDITOR vim
+
+# make Vim usable with git
+set -x GIT_EDITOR vim
+
 # Silence fish greeting
 set -g fish_greeting ''
 
