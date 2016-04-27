@@ -2,8 +2,8 @@ set nocompatible	" be iMproved, required
 filetype off		" required
 
 " set the runtime path to include Vundle and intialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.nvim/bundle/Vundle.vim
+call vundle#begin('~/.nvim/bundle')
 " alternatively, pass a path where Vundle should install plugins
 " call vundle#begin('~/some/path/here')
 
@@ -11,27 +11,24 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'                   " this may not be needed
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'tpope/vim-fugitive'			" github interface
 Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
 
-"Plugin 'vim-ruby/vim-ruby'			" ruby tool
-"Plugin 'fatih/vim-go'				" go-lang tool
-"Plugin 'elzr/vim-json'  			" JSON highlighting tool
-"Plugin 'pangloss/vim-javascript'		" js tool
-"Plugin 'tpope/vim-cucumber'			" cucumber script helper
-"Plugin 'moll/vim-node'
+Plugin 'vim-ruby/vim-ruby'			" ruby tool
+Plugin 'fatih/vim-go'				" go-lang tool
+Plugin 'elzr/vim-json'  			" JSON highlighting tool
+Plugin 'pangloss/vim-javascript'		" js tool
+Plugin 'tpope/vim-cucumber'			" cucumber script helper
+Plugin 'moll/vim-node'
 
 Plugin 'mbbill/undotree'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'scrooloose/nerdtree'			" file tree browser
 Plugin 'scrooloose/nerdcommenter'		" commenting tool
 Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
-Plugin 'rking/ag.vim'
 
-Plugin 'Valloric/YouCompleteMe'                 " code-completion
 Plugin 'SirVer/ultisnips'			" snipping tool - python based
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'                     " change surrounding marks
@@ -112,7 +109,7 @@ let g:airline_powerline_fonts = 1
 " set to something that shouldn't be used while typeing
 let g:ycm_key_list_previous_completions=['<Up>']
 
-let g:UltiSnipsSnippetsDir = $HOME.'/.vim/UltiSnips/'
+let g:UltiSnipsSnippetsDir = $HOME.'/.nvim/UltiSnips/'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsExpandTrigger = '<C-Space>'
 let g:UltiSnipsListSnippets = '<C-l>'
