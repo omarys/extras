@@ -5,7 +5,7 @@ call plug#begin('/home/user/.vim/autoload/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'			" github interface
@@ -113,8 +113,5 @@ let g:table_mode_corner="|"
 
 " colorscheme
 set background=dark
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_termcolors=256
-colorscheme gruvbox
-
+set t_Co=16
+colorscheme solarized
