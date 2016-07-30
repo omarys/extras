@@ -1,0 +1,15 @@
+# Default GitHub account
+Host github
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/github
+# Default personal bitbucket account
+Host bitbucket.org
+  HostName bitbucket.org
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/personal
+# Work user account
+Host work
+  HostName bitbucket.org
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/work
