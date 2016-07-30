@@ -1,35 +1,38 @@
 set nocompatible	" be iMproved, required
 filetype off		" required
 
-call plug#begin('/home/user/.vim/autoload/plugged')
+" set the runtime path to include Vundle and intialize
+call plug#begin('/home/user/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 
-Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-fugitive'			" github interface
-Plug 'airblade/vim-gitgutter'		        " show git diff in gutter
-Plug 'klen/python-mode'
-"Plugin 'vim-ruby/vim-ruby'			" ruby tool
-"Plugin 'fatih/vim-go'				" go-lang tool
-"Plugin 'elzr/vim-json'  			" JSON highlighting tool
-"Plugin 'pangloss/vim-javascript'		" js tool
-"Plugin 'tpope/vim-cucumber'			" cucumber script helper
-"Plugin 'moll/vim-node'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
+Plug 'tpope/vim-markdown'
+Plug 'klen/python-mode'
+"Plug 'vim-ruby/vim-ruby'
+"Plug 'fatih/vim-go'	
+"Plug 'elzr/vim-json'  
+"Plug 'pangloss/vim-javascript'
+"Plug 'tpope/vim-cucumber'
+"Plug 'moll/vim-node'
+
+Plug 'ervandew/supertab'
 Plug 'mbbill/undotree'
-"Plug 'dhruvasagar/vim-table-mode'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'scrooloose/nerdtree'			" file tree browser
 Plug 'scrooloose/nerdcommenter'		" commenting tool
 Plug 'kien/ctrlp.vim' 			" this is CtrlP!
 
+" Plug 'Valloric/YouCompleteMe'                 " code-completion
 Plug 'SirVer/ultisnips'			" snipping tool - python based
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'                     " change surrounding marks
 
-call plug#end()
-
+call plug#end()		" required
 filetype plugin indent on	" required
 
 syntax enable
@@ -45,7 +48,7 @@ set ignorecase
 set hlsearch
 set incsearch
 set showmatch
-set shell=/bin/bash
+set shell=/usr/bin/bash
 set clipboard=unnamedplus
 
 " remap leader key
@@ -83,6 +86,9 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+" You Complete Me restart server mapping
+" nmap <Leader>yr :YcmRestartServer<CR>
+
 " NERDTree mapping
 nmap <Leader>t :NERDTree<CR>
 
@@ -92,26 +98,31 @@ nmap <Leader>tm :TableModeToggle<CR>
 " capitalize the previous word
 nmap <Leader>\ m`b~``
 
+" forced use of python2 interpreter - python3 not compatible
+" let g:ycm_server_python_interpreter = '/usr/bin/python'
+
 " prettier fonts and shapes on airline status bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-let g:UltiSnipsSnippetsDir = $HOME.'/.vim/UltiSnips/'
+" set to something that shouldn't be used while typeing
+" let g:ycm_key_list_previous_completions=['<Up>']
+
+let g:UltiSnipsSnippetsDir = $HOME.'/.vim/plugged/vim-snippets/UltiSnips/'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-let g:UltiSnipsExpandTrigger = '<C-Space>'
+"let g:UltiSnipsExpandTrigger = '<C-Space>'
 let g:UltiSnipsListSnippets = '<C-l>'
 let g:UltiSnipsEditSplit="vertical"
 
 " fugitive on the statusline - if the plugin is loaded
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
-" syntastic on the the statusline
-let g:airline#extensions#syntastic#enabled = 1
-
 " table mode uses markdown style for separators
 let g:table_mode_corner="|"
 
 " colorscheme
 set background=dark
-set t_Co=16
 colorscheme solarized
+let g:solarized_termcolors=16
+let g:solarized_termtrans=1
+set t_Co=16
