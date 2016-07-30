@@ -1,22 +1,16 @@
 set nocompatible	" be iMproved, required
 filetype off		" required
 
-" set the runtime path to include Vundle and intialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
+call plug#begin('/home/user/.vim/autoload/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'                   " this may not be needed
-Plugin 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
 
-Plugin 'tpope/vim-fugitive'			" github interface
-Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
-
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'			" github interface
+Plug 'airblade/vim-gitgutter'		        " show git diff in gutter
+Plug 'klen/python-mode'
 "Plugin 'vim-ruby/vim-ruby'			" ruby tool
 "Plugin 'fatih/vim-go'				" go-lang tool
 "Plugin 'elzr/vim-json'  			" JSON highlighting tool
@@ -24,19 +18,18 @@ Plugin 'airblade/vim-gitgutter'		        " show git diff in gutter
 "Plugin 'tpope/vim-cucumber'			" cucumber script helper
 "Plugin 'moll/vim-node'
 
-Plugin 'mbbill/undotree'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'scrooloose/nerdtree'			" file tree browser
-Plugin 'scrooloose/nerdcommenter'		" commenting tool
-Plugin 'kien/ctrlp.vim' 			" this is CtrlP!
-Plugin 'rking/ag.vim'
+Plug 'mbbill/undotree'
+"Plug 'dhruvasagar/vim-table-mode'
+Plug 'scrooloose/nerdtree'			" file tree browser
+Plug 'scrooloose/nerdcommenter'		" commenting tool
+Plug 'kien/ctrlp.vim' 			" this is CtrlP!
 
-Plugin 'Valloric/YouCompleteMe'                 " code-completion
-Plugin 'SirVer/ultisnips'			" snipping tool - python based
-Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-surround'                     " change surrounding marks
+Plug 'SirVer/ultisnips'			" snipping tool - python based
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-surround'                     " change surrounding marks
 
-call vundle#end()		" required
+call plug#end()
+
 filetype plugin indent on	" required
 
 syntax enable
@@ -52,7 +45,7 @@ set ignorecase
 set hlsearch
 set incsearch
 set showmatch
-set shell=/usr/bin/bash
+set shell=/bin/bash
 set clipboard=unnamedplus
 
 " remap leader key
@@ -90,9 +83,6 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-" You Complete Me restart server mapping
-nmap <Leader>yr :YcmRestartServer<CR>
-
 " NERDTree mapping
 nmap <Leader>t :NERDTree<CR>
 
@@ -102,15 +92,9 @@ nmap <Leader>tm :TableModeToggle<CR>
 " capitalize the previous word
 nmap <Leader>\ m`b~``
 
-" forced use of python2 interpreter - python3 not compatible
-let g:ycm_server_python_interpreter = '/usr/bin/python'
-
 " prettier fonts and shapes on airline status bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-
-" set to something that shouldn't be used while typeing
-let g:ycm_key_list_previous_completions=['<Up>']
 
 let g:UltiSnipsSnippetsDir = $HOME.'/.vim/UltiSnips/'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
@@ -121,12 +105,13 @@ let g:UltiSnipsEditSplit="vertical"
 " fugitive on the statusline - if the plugin is loaded
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
+" syntastic on the the statusline
+let g:airline#extensions#syntastic#enabled = 1
+
 " table mode uses markdown style for separators
 let g:table_mode_corner="|"
 
 " colorscheme
 set background=dark
-colorscheme solarized
-let g:solarized_termcolors=16
-let g:solarized_termtrans=1
 set t_Co=16
+colorscheme solarized
