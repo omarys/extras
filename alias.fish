@@ -1,2 +1,7 @@
 alias ..="cd .."
 alias ...="cd ../.."
+alias in="sudo dnf install"
+alias up="sudo dnf update -y"
+alias se="dnf search"
+alias remo="sudo dnf remove"
+alias newkey="ssh-keygen -o -a 100 -t ed25519"
