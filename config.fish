@@ -15,6 +15,9 @@ set -g fish_greeting ''
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
 
+# set local path
+set PATH "$HOME/.local/bin" $PATH
+
 function start_agent
     if [ -n "$SSH_AGENT_PID" ]
             ps -ef | grep $SSH_AGENT_PID | grep ssh-agent > /dev/null
