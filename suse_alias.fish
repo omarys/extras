@@ -1,0 +1,8 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias xx="exit"
+alias in="sudo zypper install"
+alias up="sudo zypper update -y"
+alias se="zypper search"
+alias remo="sudo zypper remove"
+alias newkey="ssh-keygen -t rsa -b 4096 -C \"omaryscott@gmail.com\""

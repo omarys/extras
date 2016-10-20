@@ -15,8 +15,17 @@ set -g fish_greeting ''
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
 
-# set local path
+# set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
+
+# persistently add to path
+function add_to_path --description 'Persistently prepends paths to your PATH'
+  for path in $argv
+    if not contains $path $fish_user_paths
+      set --universal fish_user_paths $fish_user_paths $argv
+    end
+  end
+end
 
 function start_agent
     if [ -n "$SSH_AGENT_PID" ]
