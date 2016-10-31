@@ -1,6 +1,6 @@
 #!/bin/bash
 # basic packages
-sudo dnf install fish gnome-tweak-tool git vim guake -y
+sudo dnf install fish gnome-tweak-tool git vim guake hexchat -y
 
 # United RPM repo
 'dnf -y install https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/RPM/unitedrpms-24-2.noarch.rpm'
