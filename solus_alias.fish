@@ -1,0 +1,7 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias it="sudo eopkg install"
+alias up="sudo eopkg update -y"
+alias sr="eopkg search"
+alias remo="sudo eopkg remove"
+alias newkey="ssh-keygen -t rsa -b 4096 -C \"omaryscott@gmail.com\""
