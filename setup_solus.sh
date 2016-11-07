@@ -20,3 +20,6 @@ mkdir ~/git
 cd ~/git
 git clone git@github.com:powerline/fonts.git
 cd fonts/ && sh install.sh
+
+# Swap escape and caps
+setxkbmap -option caps:swapescape
