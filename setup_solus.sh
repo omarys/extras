@@ -2,7 +2,7 @@
 
 # basic packages
 sudo eopkg up -y
-sudo eopkg it git fish python3 python3-devel neovim guake -y
+sudo eopkg it git fish python3 python3-devel neovim guake gnome-tweak-tool -y
 
 # chsh
 sudo chsh -s /usr/bin/fish user
