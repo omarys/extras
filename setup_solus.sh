@@ -4,6 +4,9 @@
 sudo eopkg up -y
 sudo eopkg it git fish python3 python3-devel neovim guake -y
 
+# chsh
+sudo chsh -s /usr/bin/fish user
+
 # vim plug
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -16,6 +19,7 @@ pip3 install neovim --user
 pip3 install rtv --user
 
 mkdir ~/git
+
 # Powerline Fonts
 cd ~/git
 git clone git@github.com:powerline/fonts.git
