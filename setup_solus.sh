@@ -2,7 +2,10 @@
 
 # basic packages
 sudo eopkg up -y
-sudo eopkg it git fish python3 python3-devel neovim guake gnome-tweak-tool -y
+sudo eopkg it git fish python3 python3-devel neovim guake gnome-tweak-tool weechat xboxdrv -y
+
+sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/network/web/browser/google-chrome-stable/pspec.xml &&
+sudo eopkg it google-chrome-*.eopkg && sudo rm  google-chrome-*.eopkg
 
 # chsh
 sudo chsh -s /usr/bin/fish user
@@ -24,6 +27,13 @@ mkdir ~/git
 cd ~/git
 git clone git@github.com:powerline/fonts.git
 cd fonts/ && sh install.sh
+
+# cp files
+cd ~/git/dot_files
+cp neovim_config.fish ~/.config/fish/config.fish
+cp solus_alias.fish ~/.config/fish/alias.fish
+cp ssh_config ~/.ssh/
+cp vimrc ~/.config/nvim/init.vim
 
 # Swap escape and caps
 setxkbmap -option caps:swapescape
