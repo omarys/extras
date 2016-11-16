@@ -13,6 +13,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-markdown'
 Plug 'klen/python-mode'
+Plug 'c.vim'
 "Plug 'vim-ruby/vim-ruby'
 "Plug 'fatih/vim-go'	
 "Plug 'elzr/vim-json'  
