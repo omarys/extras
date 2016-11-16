@@ -12,6 +12,9 @@ set -x GIT_EDITOR nvim
 # Silence fish greeting
 set -g fish_greeting ''
 
+# swap esc and caps
+setxkbmap -option caps:swapescape
+
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
 
