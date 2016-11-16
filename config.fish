@@ -4,16 +4,19 @@
 set -x VAGRANT_DEFAULT_PROVIDER libvirt
 
 # make Vim the default editor
-set -x EDITOR vim
+set -x EDITOR nvim
 
 # make Vim usable with git
-set -x GIT_EDITOR vim
+set -x GIT_EDITOR nvim
 
 # Silence fish greeting
 set -g fish_greeting ''
 
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
+
+# swap escape and caps
+setxkbmap -option caps:swapescape
 
 # set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
@@ -71,8 +74,7 @@ function fish_title
     end
 end
 
-function ef; vim ~/.config/fish/config.fish; end
-function ev; vim ~/.vimrc; end
+function ef; nvim ~/.config/fish/config.fish; end
 
 # Systemd
 if which systemctl >/dev/null ^/dev/null
