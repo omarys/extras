@@ -6,6 +6,7 @@ sudo eopkg it git fish python3 python3-devel neovim guake gnome-tweak-tool weech
 
 sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/network/web/browser/google-chrome-stable/pspec.xml &&
 sudo eopkg it google-chrome-*.eopkg && sudo rm  google-chrome-*.eopkg
+sudo eopkg it $(eopkg sr -N libreoffice | cut -d" " -f 1 | tr '\n' ' ')
 
 # chsh
 sudo chsh -s /usr/bin/fish user
