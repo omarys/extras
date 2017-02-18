@@ -2,9 +2,6 @@
 # basic packages
 sudo dnf install fish gnome-tweak-tool git vim guake hexchat -y
 
-# United RPM repo
-'dnf -y install https://raw.githubusercontent.com/UnitedRPMs/unitedrpms/master/RPM/unitedrpms-24-2.noarch.rpm'
-
 # Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
