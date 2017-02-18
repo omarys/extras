@@ -3,23 +3,26 @@
 # Tell Vagrant to use libvirt as it's default provider.
 set -x VAGRANT_DEFAULT_PROVIDER libvirt
 
-# make Vim the default editor
+# make nvim the default editor
 set -x EDITOR nvim
 
-# make Vim usable with git
+# make nvim usable with git
 set -x GIT_EDITOR nvim
 
 # Silence fish greeting
 set -g fish_greeting ''
 
+# swap esc and caps
+setxkbmap -option caps:swapescape
+
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
 
-# swap escape and caps
-setxkbmap -option caps:swapescape
-
 # set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
+
+# virtualfish
+eval (python3 -m virtualfish)
 
 # persistently add to path
 function add_to_path --description 'Persistently prepends paths to your PATH'
@@ -75,6 +78,7 @@ function fish_title
 end
 
 function ef; nvim ~/.config/fish/config.fish; end
+function ev; nvim ~/.config/nvim/init.vim; end
 
 # Systemd
 if which systemctl >/dev/null ^/dev/null
