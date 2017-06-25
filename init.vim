@@ -2,7 +2,7 @@ set nocompatible	" be iMproved, required
 filetype off		" required
 
 " set the runtime path to include Vundle and intialize
-call plug#begin('/home/mac/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
