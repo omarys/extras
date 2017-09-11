@@ -21,6 +21,9 @@ setenv SSH_ENV $HOME/.ssh/environment
 # set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
 
+eval (python -m virtualfish)
+ set -x PYTHONPATH /home/user/.local/lib/python3.5/site-packages/virtualfish $PYTHONPATH
+
 # persistently add to path
 function add_to_path --description 'Persistently prepends paths to your PATH'
   for path in $argv
