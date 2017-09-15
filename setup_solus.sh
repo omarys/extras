@@ -26,8 +26,8 @@ mkdir ~/git
 
 # Powerline Fonts
 cd ~/git
-git clone git@github.com:powerline/fonts.git
-cd fonts/ && sh install.sh
+git clone git@github.com:ryanoasis/nerd-fonts.git
+cd nerd-fonts/ && sh install.sh
 
 # cp files
 cd ~/git/dot_files
