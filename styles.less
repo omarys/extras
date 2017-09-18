@@ -1,26 +1,23 @@
-// add or import these into your Atom styles.less
-
 /******************  VIM MODE STATUS BAR ****************************************/
 
 // green
-@normal-bg: grey;
+@normal-bg: rgb(105, 238, 103);
 // blue
-@insert-bg: green;
+@insert-bg: rgb(7, 193, 242);
 // yellowish
-@visual-bg: magenta;
+@visual-bg: rgb(255, 206, 98);
 
 
 // change the current cursor-line background color
 // based on vim mode
-atom-text-editor.is-focused {
-  &::shadow {
-    .cursor-line {
-      background: fadeout(@normal-bg, 80%);
-    }
+atom-text-editor.is-focused.editor {
+  .cursor-line {
+    // background: rgba(64, 64, 37, 5);
+    background: fadeout(@normal-bg, 80%);
   }
-  &.insert-mode::shadow {
+  &.insert-mode {
     .cursor-line {
-      background: fadeout(@insert-bg, 92%);
+      background: fadeout(@insert-bg, 90%);
     }
   }
 }
@@ -42,7 +39,7 @@ atom-text-editor.is-focused {
 
 .status-bar-vim-mode-normal {
   background: @normal-bg;
-  color: white;
+  color: rgb(4, 111, 11);
 }
 
 .status-bar-vim-mode-insert {
@@ -52,20 +49,18 @@ atom-text-editor.is-focused {
 
 .status-bar-vim-mode-visual {
   background: @visual-bg;
-  color: white;
+  color: rgb(168, 117, 5);
 }
 
 // change cursor color in normal mode
-atom-text-editor.vim-mode.normal-mode.is-focused {
-  &::shadow // shadow-DOM enabled
-  {
-    .cursor {
-      background-color: @normal-bg;
-    }
+atom-text-editor.vim-mode.normal-mode.is-focused.editor {
+  .cursor {
+    background-color: @normal-bg;
   }
 }
 
 // visual mode and selected text
-atom-text-editor::shadow .selection .region {
+atom-text-editor.editor .selection .region {
   background-color: fadeout(@visual-bg, 75%);
 }
+
