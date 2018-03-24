@@ -13,16 +13,13 @@ set -x GIT_EDITOR nvim
 set -g fish_greeting ''
 
 # swap esc and caps
-setxkbmap -option caps:swapescape
+#setxkbmap -option caps:swapescape
 
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
 
 # set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
-
-# virtualfish
-eval (python3 -m virtualfish)
 
 # persistently add to path
 function add_to_path --description 'Persistently prepends paths to your PATH'
