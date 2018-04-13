@@ -1,6 +1,6 @@
 #!/bin/bash
 # basic packages
-sudo dnf install fish gnome-tweak-tool git vim guake hexchat -y
+sudo dnf install fish gnome-tweak-tool git neovim guake hexchat -y
 
 # Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
