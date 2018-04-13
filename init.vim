@@ -13,6 +13,8 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'tpope/vim-markdown'
 Plug 'klen/python-mode'
+Plug 'nvie/vim-flake8'
+Plug 'artur-shaik/vim-javacomplete2'
 Plug 'ervandew/supertab'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
@@ -49,6 +51,12 @@ nnoremap <Leader>x :x<CR>
 nnoremap <Leader>q :q!<CR>
 nnoremap <Leader>s :source %<CR>
 
+" Navigate splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Autoexpansion of parens, brackets etc.
 inoremap (<CR> (<CR>)<Esc>O
 inoremap {<CR> {<CR>}<Esc>O
@@ -75,45 +83,46 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-" You Complete Me restart server mapping
-" nmap <Leader>yr :YcmRestartServer<CR>
-
 " NERDTree mapping
 nmap <Leader>t :NERDTree<CR>
 
 " table mode shortcut
 nmap <Leader>tm :TableModeToggle<CR>
+" table mode uses markdown style for separators
+let g:table_mode_corner="|"
 
 " capitalize the previous word
 nmap <Leader>\ m`b~``
-
-" forced use of python2 interpreter - python3 not compatible
-" let g:ycm_server_python_interpreter = '/usr/bin/python'
 
 " prettier fonts and shapes on airline status bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" set to something that shouldn't be used while typeing
-" let g:ycm_key_list_previous_completions=['<Up>']
-
+" Ultisnips shortcuts
 let g:UltiSnipsSnippetsDir = $HOME.'/.vim/plugged/vim-snippets/UltiSnips/'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-"let g:UltiSnipsExpandTrigger = '<C-Space>'
+let g:UltiSnipsExpandTrigger = '<C-Space>'
 let g:UltiSnipsListSnippets = '<C-l>'
 let g:UltiSnipsEditSplit="vertical"
 
 " fugitive on the statusline - if the plugin is loaded
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
-" table mode uses markdown style for separators
-let g:table_mode_corner="|"
-
+" this fixed some silly error a long time ago...I think...
 set guicursor=
+
+" build and run java
+autocmd FileType java set makeprg=javac\ %
+autocmd FileType java set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
+autocmd FileType java map <Leader>j :make<Return>:copen<Return>
+
+" pymode shortcuts/settings
+autocmd FileType python let g:pymode_run_bind = '<Leader>r'
+let g:pymode_lint = 1
+let g:pymode_lint_unmodified = 0
+let g:pymode_lint_message = 1
+let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
 
 " colorscheme
 set background=dark
 colorscheme molokai
-let g:solarized_termcolors=16
-let g:solarized_termtrans=1
-set t_Co=16
