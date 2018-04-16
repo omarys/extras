@@ -2,11 +2,12 @@ set nocompatible	" be iMproved, required
 filetype off		" required
 
 " set the runtime path to include Vundle and intialize
-call plug#begin('/home/omary/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'flazz/vim-colorschemes'
+Plug 'tomasr/molokai'
+"Plug 'flazz/vim-colorschemes'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'

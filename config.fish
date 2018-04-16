@@ -12,8 +12,11 @@ set -x GIT_EDITOR nvim
 # Silence fish greeting
 set -g fish_greeting ''
 
+# enable nerd fonts
+set -g theme_nerd_fonts yes
+
 # swap esc and caps
-#setxkbmap -option caps:swapescape
+setxkbmap -option caps:swapescape
 
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
@@ -54,7 +57,6 @@ function start_agent
     end
 end
 
-
 function test_identities
     ssh-add -l | grep "The agent has no identities" > /dev/null
     if [ $status -eq 0 ]
@@ -64,7 +66,6 @@ function test_identities
         end
     end
 end
-
 
 function fish_title
     if [ $_ = 'fish' ]
@@ -86,24 +87,25 @@ if which systemctl >/dev/null ^/dev/null
 end
 
 # fish git prompt
-set __fish_git_prompt_showdirtystate 'yes'
-set __fish_git_prompt_showstashstate 'yes'
-set __fish_git_prompt_showupstream auto,verbose
-set __fish_git_prompt_color_branch yellow
-set __fish_git_prompt_color_dirtystate red
+#set __fish_git_prompt_showdirtystate 'yes'
+#set __fish_git_prompt_showstashstate 'yes'
+#set __fish_git_prompt_showupstream auto,verbose
+#set __fish_git_prompt_color_branch yellow
+#set __fish_git_prompt_color_dirtystate red
 
 # Status Chars for git status
-set __fish_git_prompt_char_dirtystate '⚡'
-set __fish_git_prompt_char_stagedstate '→'
-set __fish_git_prompt_char_stashstate '↩'
-set __fish_git_prompt_char_upstream_ahead '↑'
-set __fish_git_prompt_char_upstream_behind '↓'
+#set __fish_git_prompt_char_dirtystate '⚡'
+#set __fish_git_prompt_char_stagedstate '→'
+#set __fish_git_prompt_char_stashstate '↩'
+#set __fish_git_prompt_char_upstream_ahead '↑'
+#set __fish_git_prompt_char_upstream_behind '↓'
 
 function fish_prompt
-        set last_status $status
-        set_color $fish_color_cwd
-        printf '%s' (prompt_pwd)
-        set_color normal
-        printf '%s ' (__fish_git_prompt)
-       set_color normal
+        #set last_status $status
+        #set_color $fish_color_cwd
+        #printf '%s' (prompt_pwd)
+        #set_color normal
+        #printf '%s ' (__fish_git_prompt)
+        powerline-shell --shell bare $status
+       #set_color normal
 end
