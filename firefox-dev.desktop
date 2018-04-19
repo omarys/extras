@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Firefox Developer Edition
+Comment=Firefox Developer Edition
+Exec=/home/user/.local/share/firefox/firefox
+Icon=/home/user/.local/share/firefox/firefox-dev.png
+Terminal=false
