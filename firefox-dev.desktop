@@ -3,6 +3,8 @@ Type=Application
 Encoding=UTF-8
 Name=Firefox Developer Edition
 Comment=Firefox Developer Edition
+# Files unzipped and copied here:
 Exec=/home/user/.local/share/firefox/firefox
+# Icon downloaded and copied here:
 Icon=/home/user/.local/share/firefox/firefox-dev.png
 Terminal=false
