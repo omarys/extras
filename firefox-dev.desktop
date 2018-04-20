@@ -1,3 +1,4 @@
+# Place this file under ~/.local/share/applications/
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
@@ -7,4 +8,5 @@ Comment=Firefox Developer Edition
 Exec=/home/user/.local/share/firefox/firefox
 # Icon downloaded and copied here:
 Icon=/home/user/.local/share/firefox/firefox-dev.png
+# Not required to be run from terminal
 Terminal=false
