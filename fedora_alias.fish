@@ -1,8 +1,0 @@
-alias ..="cd .."
-alias ...="cd ../.."
-alias in="sudo dnf install"
-alias up="sudo dnf update -y"
-alias se="dnf search"
-alias remo="sudo dnf remove"
-alias newkey="ssh-keygen -t rsa -b 4096 -C \"omaryscott@gmail.com\""
-alias pipup="pip3 list --outdated --format=legacy | cut -d' ' -f1 | xargs -n1 pip3 install -U --user"
