@@ -37,3 +37,6 @@ python3 get-pip.py
 pip install rtv --user
 pip install pipenv --user
 pip install ansible --user
+
+echo "generating ssh key"
+
