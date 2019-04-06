@@ -24,7 +24,8 @@ setenv SSH_ENV $HOME/.ssh/environment
 # set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
 
-set XDG_DATA_DIRS "/var/lib/flatpak/exports/share:/home/user/.local/share/flatpak/exports/share" $XDG_DATA_DIRS
+set XDG_DATA_DIRS "/home/user/.local/share/applications:/home/user/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share" $XDG_DATA_DIRS
+
 # persistently add to path
 function add_to_path --description 'Persistently prepends paths to your PATH'
   for path in $argv
