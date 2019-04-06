@@ -24,6 +24,7 @@ setenv SSH_ENV $HOME/.ssh/environment
 # set local path (mostly for pip installed apps)
 set PATH "$HOME/.local/bin" $PATH
 
+set XDG_DATA_DIRS "/var/lib/flatpak/exports/share:/home/user/.local/share/flatpak/exports/share" $XDG_DATA_DIRS
 # persistently add to path
 function add_to_path --description 'Persistently prepends paths to your PATH'
   for path in $argv
@@ -86,6 +87,13 @@ if which systemctl >/dev/null ^/dev/null
   function reboot;  sudo systemctl reboot $argv; end
 end
 
+# Fisher
+#if not functions -q fisher
+    #set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
+    #curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
+    #fish -c fisher
+#end
+
 # fish git prompt
 #set __fish_git_prompt_showdirtystate 'yes'
 #set __fish_git_prompt_showstashstate 'yes'
@@ -106,6 +114,6 @@ function fish_prompt
         #printf '%s' (prompt_pwd)
         #set_color normal
         #printf '%s ' (__fish_git_prompt)
-        powerline-shell --shell bare $status
+        #powerline-shell --shell bare $status
        #set_color normal
 end
