@@ -6,8 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tomasr/molokai'
-"Plug 'flazz/vim-colorschemes'
+Plug 'dracula/vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -126,4 +125,4 @@ let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
 
 " colorscheme
 set background=dark
-colorscheme molokai
+colorscheme dracula

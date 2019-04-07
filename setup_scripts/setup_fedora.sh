@@ -1,13 +1,13 @@
 #!/bin/bash
 
 echo "updating and upgrading"
-sudo dnf update -y
+#sudo dnf update -y
 
 echo "installing git, fish, neovim, and firefox"
-sudo dnf install git fish neovim yakuake
+#sudo dnf install git fish neovim yakuake
 
 echo "changing shell for user"
-chsh -s /usr/bin/fish
+#chsh -s /usr/bin/fish
 
 echo "installing vim-plug for neovim"
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
@@ -18,9 +18,9 @@ wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regul
 mkdir -p ~/.local/share/fonts && cp 'Hack\ Regular\ Nerd\ Font\ Complete\ Mono.ttf' ~/.local/share/fonts
 
 echo "installing pip"
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
+#curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+#python3 get-pip.py
 
-pip install rtv --user
-pip install pipenv --user
-pip install ansible --user
+#pip install rtv --user
+#pip install pipenv --user
+#pip install ansible --user
