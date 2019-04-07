@@ -21,10 +21,13 @@ setxkbmap -option caps:swapescape
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
 
-# set local path (mostly for pip installed apps)
-set PATH "$HOME/.local/bin" $PATH
+if test -d $HOME/.local/bin/
+  set -gx PATH $HOME/.local/bin $PATH
+end
 
-set XDG_DATA_DIRS "/home/user/.local/share/applications:/home/user/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share" $XDG_DATA_DIRS
+if test -d /var/lib/flatpak/
+  set -gx XDG_DATA_DIRS "/home/user/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/"
+end
 
 # persistently add to path
 function add_to_path --description 'Persistently prepends paths to your PATH'
@@ -33,6 +36,13 @@ function add_to_path --description 'Persistently prepends paths to your PATH'
       set --universal fish_user_paths $fish_user_paths $argv
     end
   end
+end
+
+# Ensure fisherman and plugins are installed
+if not test -f $HOME/.config/fish/functions/fisher.fish
+  echo "==> Fisherman not found.  Installing."
+  curl -sLo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+  fisher
 end
 
 function start_agent
@@ -86,35 +96,4 @@ if which systemctl >/dev/null ^/dev/null
   function stop;    sudo systemctl stop $argv; end
   function restart; sudo systemctl restart $argv; end
   function reboot;  sudo systemctl reboot $argv; end
-end
-
-# Fisher
-#if not functions -q fisher
-    #set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
-    #curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
-    #fish -c fisher
-#end
-
-# fish git prompt
-#set __fish_git_prompt_showdirtystate 'yes'
-#set __fish_git_prompt_showstashstate 'yes'
-#set __fish_git_prompt_showupstream auto,verbose
-#set __fish_git_prompt_color_branch yellow
-#set __fish_git_prompt_color_dirtystate red
-
-# Status Chars for git status
-#set __fish_git_prompt_char_dirtystate '⚡'
-#set __fish_git_prompt_char_stagedstate '→'
-#set __fish_git_prompt_char_stashstate '↩'
-#set __fish_git_prompt_char_upstream_ahead '↑'
-#set __fish_git_prompt_char_upstream_behind '↓'
-
-function fish_prompt
-        #set last_status $status
-        #set_color $fish_color_cwd
-        #printf '%s' (prompt_pwd)
-        #set_color normal
-        #printf '%s ' (__fish_git_prompt)
-        #powerline-shell --shell bare $status
-       #set_color normal
 end
