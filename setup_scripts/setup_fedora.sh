@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "updating and upgrading"
-#sudo dnf update -y
+echo "installing third party repositories"
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 echo "installing git, fish, neovim, and firefox"
-#sudo dnf install git fish neovim yakuake
+sudo dnf install git fish neovim yakuake
 
 echo "changing shell for user"
 #chsh -s /usr/bin/fish
@@ -21,6 +21,6 @@ echo "installing pip"
 #curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 #python3 get-pip.py
 
-#pip install rtv --user
-#pip install pipenv --user
-#pip install ansible --user
+pip install rtv --user
+pip install pipenv --user
+pip install ansible --user
