@@ -14,14 +14,21 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-markdown'
 Plug 'klen/python-mode'
 Plug 'nvie/vim-flake8'
-Plug 'artur-shaik/vim-javacomplete2'
+"Plug 'artur-shaik/vim-javacomplete2'
 Plug 'ervandew/supertab'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'scrooloose/nerdtree'			" file tree browser
-Plug 'scrooloose/nerdcommenter'		" commenting tool
-Plug 'kien/ctrlp.vim' 			" this is CtrlP!
-Plug 'tpope/vim-surround'                     " change surrounding marks
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-surround'
+
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'autozimu/LanguageClient-neovim', {
+  "\ 'branch': 'next',
+  "\ 'do': 'bash install.sh',
+  "\}
+"Plug 'junegunn/fzf'
 
 call plug#end()		" required
 filetype plugin indent on	" required
