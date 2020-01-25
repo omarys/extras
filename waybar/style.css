@@ -1,129 +1,125 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "Noto Sans Display", "Font Awesome 5 Free";
-    font-size: 13px;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family: Monaco, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #dfdfdf;
+  min-height: 0;
 }
 
 window#waybar {
-    background: #292D3E;
-    color: white;
+  background-color: #222222;
+  color: #dfdfdf;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    color: white;
+  padding: 0 7px;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inherit;
+  border-bottom: 3px solid #1793d1;
 }
 
 #workspaces button.focused {
-    background: #64727D;
+  background-color: #444;
+  border-bottom: 3px solid #1793d1;
 }
 
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+  border-bottom: 3px solid #eb4d4b;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
 #mode {
-    background: #64727D;
-}
-
-#clock, #battery, #cpu, #temperature, #memory, #backlight, #network, #pulseaudio, #custom-playerctl, #custom-yay, #tray, #mode, #idle_inhibitor {
-    padding: 0 10px;
-    margin: 0 5px;
+  padding: 0 5px;
+  margin: 0 4px;
+  color: #dfdfdf;
 }
 
 #clock {
-    background-color: #64727D;
+  border-bottom: 3px solid #7e66b9;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: black;
+  border-bottom: 3px solid #ffb52a;
 }
 
 #battery.charging {
-    color: black;
-    background-color: #a3be8c;
+  border-bottom: 3px solid #44bd32;
 }
 
 @keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
+  to {
+    color: #de0037;
+    border-bottom: 3px solid #de0037;
+  }
 }
 
 #battery.critical:not(.charging) {
-    background: #bf616a;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  color: #dfdfdf;
+  border-bottom: 3px solid #ffb52a;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-#temperature {
-    background: #97B084;
-	color: black;
-}
-
-#temperature.critical {
-    background: #bf616a;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+label:focus {
+  background-color: #000000;
 }
 
 #cpu {
-    background: #BD9B5D;
-    color: #000000;
+  border-bottom: 3px solid #f90000;
 }
 
 #memory {
-	color: black;
-    background: #b48ead;
+  border-bottom: 3px solid #4bffdc;
 }
 
 #backlight {
-    background: #90b1b1;
+  background-color: #222;
+  border-bottom: 3px solid #f1c40f;
 }
 
 #network {
-	color: black;
-    background: #81a1c1;
-}
-
-#network.disconnected {
-    background: #f53c3c;
+  border-bottom: 3px solid #9f78e1;
 }
 
 #pulseaudio {
-    background: #88c0d0;
-    color: black;
+  border-bottom: 3px solid #55aa55;
 }
 
 #pulseaudio.muted {
-    background: #90b1b1;
-    color: #2a5c45;
+  border-bottom: 3px solid #ff5555;
 }
 
-#custom-playerctl {
-    background: #97B084;
-    color: black;
+#mode {
+  padding-right: 50px;
 }
 
-#custom-yay {
-    background-color: #64727D;
+#temperature {
+  border-bottom: 3px solid #f50a4d;
 }
 
-#tray {
-    background-color: #282828;
-}
-
-#idle_inhibitor {
-    background-color: #8fbcbb;
-	color: #000000;
+#temperature.critical {
+  color: red;
 }
