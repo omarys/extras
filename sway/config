@@ -25,8 +25,8 @@ set $menu dmenu_path | wofi --show drun -i | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Pictures/wal.jpg fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg ~/Pictures/wal.jpg fill
 #
 # Example configuration:
 #
@@ -130,6 +130,9 @@ input * {
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym Shift+XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
+    bindsym Shift+XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
+    bindsym Shift+XF86AudioMute exec pactl set-source-mute 1 toggle
 #
 # Workspaces:
 #
