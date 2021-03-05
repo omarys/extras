@@ -1,12 +1,4 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
 ### Variables
-#
-# Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
 set $left h
@@ -43,6 +35,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #          timeout 600 'swaymsg "output * dpms off"' \
 #               resume 'swaymsg "output * dpms on"' \
 #          before-sleep 'swaylock -f -c 000000'
+#exec swayidle -w \
+    #timeout 1070 'swaylock -f'\
+    #timeout 770 'swaymsg "output * dpms off"' \
+    #resume 'swaymsg "output * dpms on"' \
+    #after-resume 'swaylock'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -61,14 +58,30 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-input * {
-    tap enabled
-    xkb_layout "us"
-    xkb_model "chromebook"
-}
-#input "0:0:Cypress_APA_Trackpad_(cyapa)" {
+#input "type:keyboard" {
+  #xkb_layout us
+  #xkb_model  chromebook
+#}
+#input "type:touchpad" {
     #tap enabled
 #}
+
+#input * {
+    #tap enabled
+    #dwt enabled
+    #xkb_layout us
+    #xkb_model chromebook
+#}
+
+input "1:1:AT_Translated_Set_2_keyboard" {
+  xkb_layout us
+  xkb_model chromebook
+}
+
+input "0:0:Cypress_APA_Trackpad_(cyapa)" {
+  tap enabled
+  dwt enabled
+}
 
 ### Key bindings
 #
@@ -123,15 +136,21 @@ input * {
     bindsym $mod+Tab workspace next
     bindsym $mod+Shift+Tab workspace previous
 
+    # Play/pause music/video
+    bindsym $mod+P exec playerctl --player=mpv play-pause
+    bindsym $mod+Period exec playerctl --player=mpv next
+    bindsym $mod+Comma exec playerctl --player=mpv previous
+
+
     # Adjust brightness
-    bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-    bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
     
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-mute @DEFAULT_SINK@ false ; exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-    bindsym Shift+XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
-    bindsym Shift+XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
+    bindsym Shift+XF86AudioRaiseVolume exec pactl set-source-volume 1 +5%
+    bindsym Shift+XF86AudioLowerVolume exec pactl set-source-volume 1 -5%
     bindsym Shift+XF86AudioMute exec pactl set-source-mute 1 toggle
 #
 # Workspaces:

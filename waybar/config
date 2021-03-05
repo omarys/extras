@@ -4,6 +4,7 @@
   "modules-left": ["sway/workspaces"],
   "modules-center": ["sway/mode"],
   "modules-right": [
+    "custom/media",
     "backlight",
     "pulseaudio",
     "memory",
@@ -86,5 +87,16 @@
       "default": ["", "", ""]
     },
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+  "custom/media": {
+    "format": "{icon}{}",
+    "return-type": "json",
+    "format-icons": {
+      "Playing": " ",
+      "Paused": " ",
+    },
+    "max-length": 50,
+    "exec": "playerctl metadata --format '{\"text\": \"{{title}}\", \"tooltip\": \"{{playerName}} : {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause"
   }
 }
