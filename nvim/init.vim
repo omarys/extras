@@ -4,31 +4,38 @@ filetype off		" required
 " set the runtime path to include Vundle and intialize
 call plug#begin('~/.vim/plugged')
 
+" Theme/color
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dracula/vim'
 
+" Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'tpope/vim-markdown'
-Plug 'klen/python-mode'
-Plug 'nvie/vim-flake8'
-"Plug 'artur-shaik/vim-javacomplete2'
-Plug 'ervandew/supertab'
-Plug 'mbbill/undotree'
-Plug 'dhruvasagar/vim-table-mode'
+" Functionality
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-surround'
+Plug 'ervandew/supertab'
+Plug 'mbbill/undotree'
 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'autozimu/LanguageClient-neovim', {
-  "\ 'branch': 'next',
-  "\ 'do': 'bash install.sh',
-  "\}
-"Plug 'junegunn/fzf'
+" Python
+Plug 'klen/python-mode'
+Plug 'nvie/vim-flake8'
+
+" Markdown
+Plug 'tpope/vim-markdown'
+Plug 'dhruvasagar/vim-table-mode'
+
+" Rust
+Plug 'racer-rust/vim-racer'
+
+" Task Warrior
+Plug 'blindFS/vim-taskwarrior'
+Plug 'preservim/tagbar'
+Plug 'powerman/vim-plugin-AnsiEsc'
 
 call plug#end()		" required
 filetype plugin indent on	" required
