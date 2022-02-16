@@ -1,7 +1,7 @@
 . ~/.config/fish/alias.fish
 
-# Tell Vagrant to use libvirt as it's default provider.
-set -x VAGRANT_DEFAULT_PROVIDER libvirt
+# Tell Vagrant to use virtualbox as it's default provider.
+set -x VAGRANT_DEFAULT_PROVIDER virtualbox
 
 # make nvim the default editor
 set -x EDITOR nvim
@@ -26,7 +26,7 @@ if test -d $HOME/.local/bin/
 end
 
 if test -d /var/lib/flatpak/
-  set -gx XDG_DATA_DIRS "/home/user/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/"
+  set -gx XDG_DATA_DIRS "/home/omary/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/"
 end
 
 # persistently add to path
@@ -89,11 +89,4 @@ end
 
 function ef; nvim ~/.config/fish/config.fish; end
 function ev; nvim ~/.config/nvim/init.vim; end
-
-# Systemd
-if which systemctl >/dev/null ^/dev/null
-  function start;   sudo systemctl start $argv; end
-  function stop;    sudo systemctl stop $argv; end
-  function restart; sudo systemctl restart $argv; end
-  function reboot;  sudo systemctl reboot $argv; end
-end
+starship init fish | source
