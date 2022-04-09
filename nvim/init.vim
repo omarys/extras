@@ -32,6 +32,9 @@ Plug 'dhruvasagar/vim-table-mode'
 " Rust
 Plug 'racer-rust/vim-racer'
 
+" Powershell
+Plug 'pprovost/vim-ps1'
+
 " Task Warrior
 Plug 'blindFS/vim-taskwarrior'
 Plug 'preservim/tagbar'
@@ -112,13 +115,6 @@ nmap <Leader>\ m`b~``
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" Ultisnips shortcuts
-let g:UltiSnipsSnippetsDir = $HOME.'/.vim/plugged/vim-snippets/UltiSnips/'
-let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-let g:UltiSnipsExpandTrigger = '<C-Space>'
-let g:UltiSnipsListSnippets = '<C-l>'
-let g:UltiSnipsEditSplit="vertical"
-
 " fugitive on the statusline - if the plugin is loaded
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 
@@ -126,16 +122,20 @@ set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
 set guicursor=
 
 " build and run java
-autocmd FileType java set makeprg=javac\ %
-autocmd FileType java set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-autocmd FileType java map <Leader>j :make<Return>:copen<Return>
+"autocmd FileType java set makeprg=javac\ %
+"autocmd FileType java set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
+"autocmd FileType java map <Leader>j :make<Return>:copen<Return>
 
 " pymode shortcuts/settings
 autocmd FileType python let g:pymode_run_bind = '<Leader>r'
 let g:pymode_lint = 1
 let g:pymode_lint_unmodified = 0
 let g:pymode_lint_message = 1
-let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+let g:pymode_lint_checkers = ['black', 'pyflakes', 'pep8', 'mccabe']
+
+" spellcheck on txt and markdown
+autocmd FileType markdown setlocal spell
+autocmd FileType text setlocal spell
 
 " colorscheme
 set background=dark
