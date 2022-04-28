@@ -89,4 +89,6 @@ end
 
 function ef; nvim ~/.config/fish/config.fish; end
 function ev; nvim ~/.config/nvim/init.vim; end
+
+thefuck --alias | source
 starship init fish | source
