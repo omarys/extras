@@ -36,7 +36,6 @@ local filetype = {
 	icons_enabled = true,
   colored = true,
   icon_only = false,
-	-- icon = nil,
 }
 
 local branch = {
