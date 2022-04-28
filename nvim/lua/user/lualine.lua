@@ -33,8 +33,10 @@ local mode = {
 
 local filetype = {
 	"filetype",
-	icons_enabled = false,
-	icon = nil,
+	icons_enabled = true,
+  colored = true,
+  icon_only = false,
+	-- icon = nil,
 }
 
 local branch = {
@@ -66,8 +68,8 @@ lualine.setup({
 	options = {
 		icons_enabled = true,
 		theme = "dracula-nvim",
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
 		always_divide_middle = true,
 	},
