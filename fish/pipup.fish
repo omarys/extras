@@ -5,3 +5,5 @@ pip install --upgrade pip
 pip install --upgrade pynvim             
 pip install --upgrade tuir               
 pip install --upgrade youtube-dl         
+sudo npm -g upgrade neovim prettier
+cargo install-update -a
