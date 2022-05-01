@@ -1,3 +1,4 @@
+up
 pip install --upgrade black              
 pip install --upgrade catt               
 pip install --upgrade neovim             
