@@ -64,15 +64,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|      |      |      |      |      | Home | PgDn | PgUp | End  |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | RCtrl| F11  |CtrAlt| Del  |Lower |     F12     |Raise | Left | Down |  Up  | Rght |
+ * |RtCtrl| F11  |RtCtl | Del  |Lower |     F12     |Raise | Left | Down |  Up  | Rght |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_preonic_grid(
-  KC_GRV,         KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_TRNS,
+  KC_GRV,         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_TRNS,
   KC_TRNS,        KC_ASTR, KC_AMPR, KC_CIRC, KC_PERC, KC_NO,   KC_NO,   KC_MINS, KC_EQL,  KC_BSLS, KC_NO,   KC_NO,
   KC_CAPS,        KC_DLR,  KC_HASH, KC_AT,   KC_EXLM, KC_NO,   KC_LBRC, KC_LPRN, KC_RPRN, KC_RBRC, KC_NO,   KC_QUOT,
   KC_TRNS,        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_NO,   KC_TRNS,
-  LCA_T(KC_RCTL), KC_F11,  KC_TRNS, KC_DEL,  KC_TRNS, KC_F12,  KC_F12,  KC_TRNS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+  LCA_T(KC_RCTL), KC_F11,  KC_RCTL, KC_DEL,  KC_TRNS, KC_F12,  KC_F12,  KC_TRNS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 ),
 
 /* Raise

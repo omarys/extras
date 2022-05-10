@@ -16,7 +16,7 @@ set -g fish_greeting ''
 set -g theme_nerd_fonts yes
 
 # swap esc and caps
-setxkbmap -option caps:swapescape
+# setxkbmap -option caps:swapescape
 
 # start_agent for ssh
 setenv SSH_ENV $HOME/.ssh/environment
