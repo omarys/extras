@@ -81,19 +81,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |  Up  |      |      |      |      |   7  |   8  |   9  |  +   |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Esc  |      | Left | Down | Right|      |      |      |   4  |   5  |   6  |  +   |
+ * | Esc  |      | Left | Down | Right|  G   |      |      |   4  |   5  |   6  |  +   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |   1  |   2  |   3  | Ent  |
+ * |      |      |  X   |      |      |      |      |      |   1  |   2  |   3  | Ent  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Ctrl | OS   | LAlt |  Fn  | Lower|    Space    | Raise|   0  |   .  | Calc | Ent  |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_preonic_grid(
-  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,    KC_PSLS, KC_PAST, KC_PMNS, KC_PMNS,
-  KC_NO,   KC_NO,   KC_NO,   KC_UP,   KC_NO,   KC_NO,   KC_NO, KC_NO,    KC_7,    KC_8,    KC_9,    KC_PPLS,
-  KC_TRNS, KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_NO, KC_NO,    KC_4,    KC_5,    KC_6,    KC_PPLS,
-  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,    KC_1,    KC_2,    KC_3,    KC_ENT,
-  KC_LCTL, KC_LGUI, KC_LALT, MO(1),   KC_TRNS, KC_SPC,  KC_SPC, KC_TRNS, KC_0,    KC_DOT,  KC_CALC, KC_ENT
+  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO, KC_NO,    KC_PSLS, KC_PAST, KC_PMNS, KC_PMNS,
+  KC_NO,   KC_NO,   KC_NO,   KC_UP,   KC_NO,   KC_NO,  KC_NO, KC_NO,    KC_7,    KC_8,    KC_9,    KC_PPLS,
+  KC_TRNS, KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_G,   KC_NO, KC_NO,    KC_4,    KC_5,    KC_6,    KC_PPLS,
+  KC_NO,   KC_NO,   KC_X,    KC_NO,   KC_NO,   KC_NO,  KC_NO, KC_NO,    KC_1,    KC_2,    KC_3,    KC_ENT,
+  KC_LCTL, KC_LGUI, KC_LALT, MO(1),   KC_TRNS, KC_SPC, KC_SPC, KC_TRNS, KC_0,    KC_DOT,  KC_CALC, KC_ENT
 ),
 
 /* Adjust (Lower + Raise)
