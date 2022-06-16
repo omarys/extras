@@ -7,5 +7,8 @@ def spin_words(sentence):
             spun.append(word)
     return " ".join(spun)
 
+
 def one_liner_spin_words(sentence):
-    return " ".join([word[::-1] if len(word) > 4 else word for word in sentence.split(" ")])
+    return " ".join(
+        [word[::-1] if len(word) > 4 else word for word in sentence.split(" ")]
+    )
