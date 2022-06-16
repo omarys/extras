@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>Newsboat - Exported Feeds</title>
+  </head>
+  <body>
+    <outline type="rss" xmlUrl="https://www.androidpolice.com/feed/" htmlUrl="https://www.androidpolice.com/" title="Android Police - Feed"/>
+    <outline type="rss" xmlUrl="https://lukesmith.xyz/rss.xml" htmlUrl="https://lukesmith.xyz/" title="Luke Smith's Webpage"/>
+    <outline type="rss" xmlUrl="http://blog.stackoverflow.com/feed/" htmlUrl="https://stackoverflow.blog/" title="Stack Overflow Blog"/>
+    <outline type="rss" xmlUrl="http://sethgodin.typepad.com/seths_blog/atom.xml" htmlUrl="https://seths.blog/" title="Seth's Blog"/>
+    <outline type="rss" xmlUrl="https://bunnyman.info/index.xml" htmlUrl="https://squirrels.wtf/" title="Dear Squirrels, WTF"/>
+    <outline type="rss" xmlUrl="http://blog.dustinkirkland.com/feeds/posts/default" htmlUrl="http://blog.dustinkirkland.com/" title="From the Canyon Edge"/>
+    <outline type="rss" xmlUrl="https://ramonh.dev/blog/feed.xml" htmlUrl="https://ramonh.dev/" title="DevRel, Developer Education and OSS"/>
+    <outline type="rss" xmlUrl="https://anneboyer.substack.com/feed" htmlUrl="https://anneboyer.substack.com/" title="M I R A B I L A R Y"/>
+    <outline type="rss" xmlUrl="https://www.charlieharrington.com/rss.xml" htmlUrl="https://www.charlieharrington.com/" title="Charlie Harrington"/>
+    <outline type="rss" xmlUrl="https://www.hyperborea.org/journal/feed/" htmlUrl="https://hyperborea.org/journal" title="K-Squared Ramblings"/>
+    <outline type="rss" xmlUrl="https://100r.co/links/rss.xml" htmlUrl="https://100r.co/" title="Hundred Rabbits"/>
+    <outline type="rss" xmlUrl="https://spool-five.com/rss.xml" htmlUrl="https://spool-five.com/" title="Spool Five"/>
+    <outline type="rss" xmlUrl="https://mwl.io/feed" htmlUrl="https://mwl.io/" title="Michael W Lucas"/>
+    <outline type="rss" xmlUrl="https://solar.lowtechmagazine.com/feeds/all-en.atom.xml" htmlUrl="https://solar.lowtechmagazine.com/" title="LOW&#x2190;TECH MAGAZINE"/>
+    <outline type="rss" xmlUrl="https://cdn.hackernoon.com/feed" htmlUrl="https://hackernoon.com/" title="Hacker Noon"/>
+    <outline type="rss" xmlUrl="https://blog.codinghorror.com/rss/" htmlUrl="https://blog.codinghorror.com/" title="Coding Horror"/>
+    <outline type="rss" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/" title="Krebs on Security"/>
+    <outline type="rss" xmlUrl="https://www.schneier.com/feed/atom/" htmlUrl="https://www.schneier.com/" title="Schneier on Security"/>
+    <outline type="rss" xmlUrl="https://www.smashingmagazine.com/feed" htmlUrl="https://www.smashingmagazine.com/" title="Articles on Smashing Magazine &#x2014; For Web Designers And Developers"/>
+    <outline type="rss" xmlUrl="https://martinfowler.com/feed.atom" htmlUrl="https://martinfowler.com/feed.atom" title="Martin Fowler"/>
+    <outline type="rss" xmlUrl="https://m.signalvnoise.com/feed/" htmlUrl="https://m.signalvnoise.com/" title="Signal v. Noise"/>
+    <outline type="rss" xmlUrl="http://feeds.hanselman.com/scotthanselman" htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog"/>
+    <outline type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/atom.xml" title="Real Python"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/PythonSoftwareFoundationNews" htmlUrl="http://pyfound.blogspot.com/" title="Python Software Foundation News"/>
+    <outline type="rss" xmlUrl="https://yasoob.me/index.xml" htmlUrl="https://yasoob.me/" title="Yasoob Khalid"/>
+    <outline type="rss" xmlUrl="https://planetpython.org/rss20.xml" htmlUrl="http://planetpython.org/" title="Planet Python"/>
+    <outline type="rss" xmlUrl="http://coreyms.com/feed/" htmlUrl="https://coreyms.com/" title="CoreyMS"/>
+    <outline type="rss" xmlUrl="http://decafbad.net/feed" htmlUrl="https://decafbad.net/" title="Craig Maloney"/>
+    <outline type="rss" xmlUrl="https://nostarch.com/feeds/newbooks.xml" htmlUrl="https://nostarch.com/frontpage_new" title="No Starch Press - New Books"/>
+    <outline type="rss" xmlUrl="https://nostarch.com/feeds/comingsoon.xml" htmlUrl="https://nostarch.com/frontpage_comingsoon" title="No Starch Press - Coming Soon"/>
+    <outline type="rss" xmlUrl="https://inkdroid.org/feed.xml" htmlUrl="https://inkdroid.org/" title="inkdroid"/>
+    <outline type="rss" xmlUrl="https://computer.rip/rss.xml" htmlUrl="https://computer.rip/" title="computers are bad"/>
+    <outline type="rss" xmlUrl="https://www.hardill.me.uk/wordpress/feed/" htmlUrl="https://www.hardill.me.uk/wordpress" title="Ben's Place"/>
+    <outline type="rss" xmlUrl="https://readrust.net/all/feed.rss" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://xkcd.com/atom.xml" htmlUrl="https://xkcd.com/" title="xkcd.com"/>
+    <outline type="rss" xmlUrl="https://www.smbc-comics.com/comic/rss" htmlUrl="https://www.smbc-comics.com/" title="Saturday Morning Breakfast Cereal"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/seriouseatsfeaturesvideos" htmlUrl="https://www.seriouseats.com/" title="Serious Eats"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/ItsFoss" htmlUrl="https://itsfoss.com/" title="It's FOSS"/>
+    <outline type="rss" xmlUrl="https://hacks.mozilla.org/feed/" htmlUrl="https://hacks.mozilla.org/" title="Mozilla Hacks &#x2013; the Web developer blog"/>
+    <outline type="rss" xmlUrl="https://planet.kde.org/index.xml" htmlUrl="https://planet.kde.org/" title="Planet KDE | English"/>
+    <outline type="rss" xmlUrl="https://www.guildwars2.com/en/feed/" htmlUrl="https://www.guildwars2.com/en" title="GuildWars2.com"/>
+    <outline type="rss" xmlUrl="https://www.teamfortress.com/rss.xml" htmlUrl="https://www.teamfortress.com/" title="TF2 Official Blog"/>
+    <outline type="rss" xmlUrl="https://www.gamingonlinux.com/article_rss.php" htmlUrl="https://www.gamingonlinux.com/" title="GamingOnLinux Latest Articles"/>
+    <outline type="rss" xmlUrl="https://www.thebioneer.com/feed/" htmlUrl="https://www.thebioneer.com/" title="The Bioneer"/>
+    <outline type="rss" xmlUrl="https://startingstrength.com/rss.rss" htmlUrl="https://startingstrength.com/" title="Starting Strength"/>
+    <outline type="rss" xmlUrl="https://fx-companion.com/feed/" htmlUrl="https://fx-companion.com/" title="The Foreign Exchanges Companion"/>
+    <outline type="rss" xmlUrl="https://www.democracynow.org/democracynow.rss" htmlUrl="http://www.democracynow.org/" title="Democracy Now!"/>
+    <outline type="rss" xmlUrl="https://www.hexbear.net/feeds/all.xml?sort=Active" htmlUrl="https://www.hexbear.net/" title="Hexbear - All"/>
+    <outline type="rss" xmlUrl="https://lobste.rs/rss" htmlUrl="https://lobste.rs/" title="Lobsters"/>
+    <outline type="rss" xmlUrl="https://network23.org/ainriail/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/" title="The Hacker News"/>
+    <outline type="rss" xmlUrl="https://bluelabyrinths.com/feed/" htmlUrl="https://bluelabyrinths.com/" title="Blue Labyrinths"/>
+    <outline type="rss" xmlUrl="https://habermas-rawls.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="https://habermas-rawls.blogspot.com/" title="Political Theory - Habermas and Rawls"/>
+    <outline type="rss" xmlUrl="https://www.lacan.com/perfumeblog/?feed=rss2" htmlUrl="https://www.lacan.com/perfumeblog" title="Perfume"/>
+    <outline type="rss" xmlUrl="https://www.urbanomic.com/feed/" htmlUrl="https://www.urbanomic.com/" title="Urbanomic"/>
+    <outline type="rss" xmlUrl="https://aeon.co/feed.rss" htmlUrl="https://aeon.co/" title="Aeon | a world of ideas"/>
+    <outline type="rss" xmlUrl="https://www.3ammagazine.com/3am/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://www.jamesrwilliams.net/feed/" htmlUrl="https://www.jamesrwilliams.net/" title="James R Williams"/>
+  </body>
+</opml>
