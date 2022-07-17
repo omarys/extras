@@ -4,63 +4,350 @@
     <title>Newsboat - Exported Feeds</title>
   </head>
   <body>
-    <outline type="rss" xmlUrl="https://www.androidpolice.com/feed/" htmlUrl="https://www.androidpolice.com/" title="Android Police - Feed"/>
     <outline type="rss" xmlUrl="https://lukesmith.xyz/rss.xml" htmlUrl="https://lukesmith.xyz/" title="Luke Smith's Webpage"/>
     <outline type="rss" xmlUrl="http://blog.stackoverflow.com/feed/" htmlUrl="https://stackoverflow.blog/" title="Stack Overflow Blog"/>
-    <outline type="rss" xmlUrl="http://sethgodin.typepad.com/seths_blog/atom.xml" htmlUrl="https://seths.blog/" title="Seth's Blog"/>
-    <outline type="rss" xmlUrl="https://bunnyman.info/index.xml" htmlUrl="https://squirrels.wtf/" title="Dear Squirrels, WTF"/>
-    <outline type="rss" xmlUrl="http://blog.dustinkirkland.com/feeds/posts/default" htmlUrl="http://blog.dustinkirkland.com/" title="From the Canyon Edge"/>
-    <outline type="rss" xmlUrl="https://ramonh.dev/blog/feed.xml" htmlUrl="https://ramonh.dev/" title="DevRel, Developer Education and OSS"/>
-    <outline type="rss" xmlUrl="https://anneboyer.substack.com/feed" htmlUrl="https://anneboyer.substack.com/" title="M I R A B I L A R Y"/>
-    <outline type="rss" xmlUrl="https://www.charlieharrington.com/rss.xml" htmlUrl="https://www.charlieharrington.com/" title="Charlie Harrington"/>
-    <outline type="rss" xmlUrl="https://www.hyperborea.org/journal/feed/" htmlUrl="https://hyperborea.org/journal" title="K-Squared Ramblings"/>
-    <outline type="rss" xmlUrl="https://100r.co/links/rss.xml" htmlUrl="https://100r.co/" title="Hundred Rabbits"/>
-    <outline type="rss" xmlUrl="https://spool-five.com/rss.xml" htmlUrl="https://spool-five.com/" title="Spool Five"/>
-    <outline type="rss" xmlUrl="https://mwl.io/feed" htmlUrl="https://mwl.io/" title="Michael W Lucas"/>
-    <outline type="rss" xmlUrl="https://solar.lowtechmagazine.com/feeds/all-en.atom.xml" htmlUrl="https://solar.lowtechmagazine.com/" title="LOW&#x2190;TECH MAGAZINE"/>
-    <outline type="rss" xmlUrl="https://cdn.hackernoon.com/feed" htmlUrl="https://hackernoon.com/" title="Hacker Noon"/>
+    <outline type="rss" xmlUrl="https://spool-five.com/rss.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://fasterthanli.me/index.xml" htmlUrl="https://fasterthanli.me/index.xml" title="fasterthanli.me"/>
+    <outline type="rss" xmlUrl="https://www.tecmint.com/feed/" htmlUrl="https://www.tecmint.com/" title="Tecmint: Linux Howtos, Tutorials &amp; Guides"/>
     <outline type="rss" xmlUrl="https://blog.codinghorror.com/rss/" htmlUrl="https://blog.codinghorror.com/" title="Coding Horror"/>
     <outline type="rss" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/" title="Krebs on Security"/>
     <outline type="rss" xmlUrl="https://www.schneier.com/feed/atom/" htmlUrl="https://www.schneier.com/" title="Schneier on Security"/>
     <outline type="rss" xmlUrl="https://www.smashingmagazine.com/feed" htmlUrl="https://www.smashingmagazine.com/" title="Articles on Smashing Magazine &#x2014; For Web Designers And Developers"/>
     <outline type="rss" xmlUrl="https://martinfowler.com/feed.atom" htmlUrl="https://martinfowler.com/feed.atom" title="Martin Fowler"/>
-    <outline type="rss" xmlUrl="https://m.signalvnoise.com/feed/" htmlUrl="https://m.signalvnoise.com/" title="Signal v. Noise"/>
-    <outline type="rss" xmlUrl="http://feeds.hanselman.com/scotthanselman" htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog"/>
     <outline type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/atom.xml" title="Real Python"/>
     <outline type="rss" xmlUrl="http://feeds.feedburner.com/PythonSoftwareFoundationNews" htmlUrl="http://pyfound.blogspot.com/" title="Python Software Foundation News"/>
     <outline type="rss" xmlUrl="https://yasoob.me/index.xml" htmlUrl="https://yasoob.me/" title="Yasoob Khalid"/>
     <outline type="rss" xmlUrl="https://planetpython.org/rss20.xml" htmlUrl="http://planetpython.org/" title="Planet Python"/>
     <outline type="rss" xmlUrl="http://coreyms.com/feed/" htmlUrl="https://coreyms.com/" title="CoreyMS"/>
     <outline type="rss" xmlUrl="http://decafbad.net/feed" htmlUrl="https://decafbad.net/" title="Craig Maloney"/>
-    <outline type="rss" xmlUrl="https://nostarch.com/feeds/newbooks.xml" htmlUrl="https://nostarch.com/frontpage_new" title="No Starch Press - New Books"/>
-    <outline type="rss" xmlUrl="https://nostarch.com/feeds/comingsoon.xml" htmlUrl="https://nostarch.com/frontpage_comingsoon" title="No Starch Press - Coming Soon"/>
     <outline type="rss" xmlUrl="https://inkdroid.org/feed.xml" htmlUrl="https://inkdroid.org/" title="inkdroid"/>
     <outline type="rss" xmlUrl="https://computer.rip/rss.xml" htmlUrl="https://computer.rip/" title="computers are bad"/>
     <outline type="rss" xmlUrl="https://www.hardill.me.uk/wordpress/feed/" htmlUrl="https://www.hardill.me.uk/wordpress" title="Ben's Place"/>
-    <outline type="rss" xmlUrl="https://readrust.net/all/feed.rss" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://readrust.net/all/feed.rss" htmlUrl="https://readrust.net/" title="Read Rust - All"/>
     <outline type="rss" xmlUrl="http://xkcd.com/atom.xml" htmlUrl="https://xkcd.com/" title="xkcd.com"/>
     <outline type="rss" xmlUrl="https://www.smbc-comics.com/comic/rss" htmlUrl="https://www.smbc-comics.com/" title="Saturday Morning Breakfast Cereal"/>
     <outline type="rss" xmlUrl="http://feeds.feedburner.com/seriouseatsfeaturesvideos" htmlUrl="https://www.seriouseats.com/" title="Serious Eats"/>
     <outline type="rss" xmlUrl="http://feeds.feedburner.com/ItsFoss" htmlUrl="https://itsfoss.com/" title="It's FOSS"/>
     <outline type="rss" xmlUrl="https://hacks.mozilla.org/feed/" htmlUrl="https://hacks.mozilla.org/" title="Mozilla Hacks &#x2013; the Web developer blog"/>
-    <outline type="rss" xmlUrl="https://planet.kde.org/index.xml" htmlUrl="https://planet.kde.org/" title="Planet KDE | English"/>
     <outline type="rss" xmlUrl="https://www.guildwars2.com/en/feed/" htmlUrl="https://www.guildwars2.com/en" title="GuildWars2.com"/>
     <outline type="rss" xmlUrl="https://www.teamfortress.com/rss.xml" htmlUrl="https://www.teamfortress.com/" title="TF2 Official Blog"/>
     <outline type="rss" xmlUrl="https://www.gamingonlinux.com/article_rss.php" htmlUrl="https://www.gamingonlinux.com/" title="GamingOnLinux Latest Articles"/>
     <outline type="rss" xmlUrl="https://www.thebioneer.com/feed/" htmlUrl="https://www.thebioneer.com/" title="The Bioneer"/>
-    <outline type="rss" xmlUrl="https://startingstrength.com/rss.rss" htmlUrl="https://startingstrength.com/" title="Starting Strength"/>
     <outline type="rss" xmlUrl="https://fx-companion.com/feed/" htmlUrl="https://fx-companion.com/" title="The Foreign Exchanges Companion"/>
     <outline type="rss" xmlUrl="https://www.democracynow.org/democracynow.rss" htmlUrl="http://www.democracynow.org/" title="Democracy Now!"/>
     <outline type="rss" xmlUrl="https://www.hexbear.net/feeds/all.xml?sort=Active" htmlUrl="https://www.hexbear.net/" title="Hexbear - All"/>
     <outline type="rss" xmlUrl="https://lobste.rs/rss" htmlUrl="https://lobste.rs/" title="Lobsters"/>
     <outline type="rss" xmlUrl="https://network23.org/ainriail/feed/" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/" title="The Hacker News"/>
+    <outline type="rss" xmlUrl="https://hnrss.org/best" htmlUrl="https://news.ycombinator.com/best" title="Hacker News: Best"/>
+    <outline type="rss" xmlUrl="https://hnrss.org/active" htmlUrl="https://news.ycombinator.com/active" title="Hacker News: Active"/>
+    <outline type="rss" xmlUrl="https://hnrss.org/bestcomments" htmlUrl="https://news.ycombinator.com/bestcomments" title="Hacker News: Best Comments"/>
     <outline type="rss" xmlUrl="https://bluelabyrinths.com/feed/" htmlUrl="https://bluelabyrinths.com/" title="Blue Labyrinths"/>
     <outline type="rss" xmlUrl="https://habermas-rawls.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="https://habermas-rawls.blogspot.com/" title="Political Theory - Habermas and Rawls"/>
     <outline type="rss" xmlUrl="https://www.lacan.com/perfumeblog/?feed=rss2" htmlUrl="https://www.lacan.com/perfumeblog" title="Perfume"/>
     <outline type="rss" xmlUrl="https://www.urbanomic.com/feed/" htmlUrl="https://www.urbanomic.com/" title="Urbanomic"/>
     <outline type="rss" xmlUrl="https://aeon.co/feed.rss" htmlUrl="https://aeon.co/" title="Aeon | a world of ideas"/>
-    <outline type="rss" xmlUrl="https://www.3ammagazine.com/3am/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://www.3ammagazine.com/3am/feed/" htmlUrl="https://www.3ammagazine.com/3am" title="3:AM Magazine"/>
     <outline type="rss" xmlUrl="https://www.jamesrwilliams.net/feed/" htmlUrl="https://www.jamesrwilliams.net/" title="James R Williams"/>
+    <outline type="rss" xmlUrl="https://yiufung.net/index.xml" htmlUrl="http://yiufung.net/" title="My portion"/>
+    <outline type="rss" xmlUrl="https://github.com/alanthird/idiocy.org/commits/master.atom" htmlUrl="https://github.com/alanthird/idiocy.org/commits/master" title="Recent Commits to idiocy.org:master"/>
+    <outline type="rss" xmlUrl="https://www.codesections.com/rss.xml" htmlUrl="https://www.codesections.com/" title="Codesections"/>
+    <outline type="rss" xmlUrl="http://xenodium.com/rss.xml" htmlUrl="http://xenodium.com/" title="Alvaro Ramirez's notes"/>
+    <outline type="rss" xmlUrl="https://lchsk.com/posts.xml" htmlUrl="https://lchsk.com/" title="lchsk - blog and technical articles"/>
+    <outline type="rss" xmlUrl="https://bendersteed.gitlab.io/post/index.xml" htmlUrl="https://bendersteed.gitlab.io/post/" title="Posts on Barracuda Blues"/>
+    <outline type="rss" xmlUrl="http://ravit.ch/rss.xml" htmlUrl="http://ravit.ch/" title="Tristan's Recent Posts"/>
+    <outline type="rss" xmlUrl="https://chaoticlab.io/feed.xml" htmlUrl="https://chaoticlab.io/" title="Chaotic Experiments"/>
+    <outline type="rss" xmlUrl="https://feeds2.feedburner.com/mrdias" htmlUrl="https://feeds2.feedburner.com/mrdias" title="Mr Dias"/>
+    <outline type="rss" xmlUrl="https://legends2k.github.io/index.xml" htmlUrl="https://legends2k.github.io/" title="Bits of Insight"/>
+    <outline type="rss" xmlUrl="https://arenzana.org/feed/" htmlUrl="https://arenzana.org/" title="Arenzana"/>
+    <outline type="rss" xmlUrl="http://justinhj.github.io/feed.xml" htmlUrl="http://justinhj.github.io/" title="Functional[Justin]"/>
+    <outline type="rss" xmlUrl="http://www.johnborwick.com/feed.xml" htmlUrl="http://www.johnborwick.com/" title="John&#x2019;s web site"/>
+    <outline type="rss" xmlUrl="https://punchagan.muse-amuse.in/tags/emacs.xml" htmlUrl="https://punchagan.muse-amuse.in/tags/emacs/" title="emacs on Noetic Nought"/>
+    <outline type="rss" xmlUrl="http://brain-break.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://brain-break.blogspot.com/search/label/emacs" title="Brain break (en)."/>
+    <outline type="rss" xmlUrl="http://pragmaticemacs.com/feed" htmlUrl="https://pragmaticemacs.wordpress.com/" title="Pragmatic Emacs"/>
+    <outline type="rss" xmlUrl="http://emacs-fu.blogspot.com/feeds/posts/default" htmlUrl="http://emacs-fu.blogspot.com/" title="emacs-fu"/>
+    <outline type="rss" xmlUrl="https://roylowrance.wordpress.com/category/emacs/feed/" htmlUrl="https://roylowrance.wordpress.com/" title="emacs &#x2013; Roy Lowrance"/>
+    <outline type="rss" xmlUrl="https://yilmazhuseyin.wordpress.com/category/emacs/feed/" htmlUrl="https://yilmazhuseyin.wordpress.com/" title="emacs &#x2013; Huseyin Yilmaz's Blog"/>
+    <outline type="rss" xmlUrl="https://www.miskatonic.org/feed/emacs.xml" htmlUrl="https://www.miskatonic.org/" title="William Denton: Posts about Emacs"/>
+    <outline type="rss" xmlUrl="https://nullprogram.com/feed/" htmlUrl="https://nullprogram.com/" title="null program"/>
+    <outline type="rss" xmlUrl="https://kozikow.wordpress.com/category/emacs/feed" htmlUrl="https://kozikow.wordpress.com/" title="emacs &#x2013; Robert Kozikowski's blog"/>
+    <outline type="rss" xmlUrl="https://www.blogger.com/feeds/13497321/posts/default/-/emacs" htmlUrl="http://www.mostlymaths.net/search/label/emacs" title="Mostly Maths"/>
+    <outline type="rss" xmlUrl="https://au9ustine.wordpress.com/tag/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://www.lambdacat.com/tag/emacs/rss/" htmlUrl="https://www.lambdacat.com/" title="emacs - LambdaCat"/>
+    <outline type="rss" xmlUrl="http://emacs-fu.blogspot.com/feeds/posts/default/-/new" htmlUrl="http://emacs-fu.blogspot.com/search/label/new" title="emacs-fu"/>
+    <outline type="rss" xmlUrl="https://erambler.co.uk/tags/emacs.xml" htmlUrl="https://erambler.co.uk/tags/emacs/" title="Emacs on eRambler"/>
+    <outline type="rss" xmlUrl="http://puntoblogspot.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://puntoblogspot.blogspot.com/search/label/emacs" title="puntoblogspot"/>
+    <outline type="rss" xmlUrl="http://babbagefiles.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://babbagefiles.blogspot.com/search/label/emacs" title="The Babbage Files"/>
+    <outline type="rss" xmlUrl="http://gregnewman.org/journal/feed/category/emacs/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://gaiustech.wordpress.com/category/emacs/feed/" htmlUrl="https://gaius.tech/" title="Emacs &#x2013; So I decided to take my work back underground"/>
+    <outline type="rss" xmlUrl="http://www.mostlymaths.net/feeds/posts/default/-/emacs" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://trey-jackson.blogspot.com/atom.xml" htmlUrl="http://trey-jackson.blogspot.com/" title="Life Is Too Short For Bad Code"/>
+    <outline type="rss" xmlUrl="http://emacsninja.com/emacs.atom" htmlUrl="https://emacsninja.com/" title="Emacs Ninja"/>
+    <outline type="rss" xmlUrl="http://emacs-doctor.com/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://blog.dispatched.ch/tag/emacs/feed" htmlUrl="http://blog.dispatched.ch/" title="emacs &#x2013; Alain M. Lafon"/>
+    <outline type="rss" xmlUrl="https://www.bytedude.com/feed.xml" htmlUrl="https://bytedude.com/" title="Bytedude"/>
+    <outline type="rss" xmlUrl="https://blog.anupamsg.me/tag/emacs/feed/atom/" htmlUrl="https://blog.anupamsg.me/" title="Emacs &#x2013; /usr"/>
+    <outline type="rss" xmlUrl="http://peadrop.com/blog/category/computers/emacs/feed/" htmlUrl="https://peadrop.com/blog/" title="Alexandre Vassalotti &#xBB; Emacs"/>
+    <outline type="rss" xmlUrl="http://andrewjamesjohnson.com/category/emacs/feed" htmlUrl="https://andrewjamesjohnson.com/" title="Emacs &#x2013; Andrew Johnson"/>
+    <outline type="rss" xmlUrl="http://emacs-china.github.io/rss.xml" htmlUrl="https://emacs-china.github.io/" title="EMACS-CHINA"/>
+    <outline type="rss" xmlUrl="https://sinewalker.wordpress.com/tag/emacs/feed/" htmlUrl="https://sinewalker.wordpress.com/" title="emacs &#x2013; sine walker"/>
+    <outline type="rss" xmlUrl="http://www.blogbyben.com/feeds/posts/default/-/emacs" htmlUrl="http://www.blogbyben.com/search/label/emacs" title="Ben's Journal"/>
+    <outline type="rss" xmlUrl="http://amortizedanalysis.wordpress.com/tag/emacs/feed/" htmlUrl="https://amortizedanalysis.wordpress.com/" title="Amortized Analysis"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/FistOfSenn" htmlUrl="http://feeds.feedburner.com/FistOfSenn" title="Fist of Senn"/>
+    <outline type="rss" xmlUrl="https://mwfogleman.github.io/Emacs.xml" htmlUrl="http://mwfogleman.github.io/" title="rejoyce"/>
+    <outline type="rss" xmlUrl="https://emacs.wordpress.com/feed/" htmlUrl="https://emacs.wordpress.com/" title="minor emacs wizardry"/>
+    <outline type="rss" xmlUrl="http://www.wilfred.me.uk/emacs_rss.xml" htmlUrl="http://www.wilfred.me.uk/" title="Wilfred Hughes::Blog"/>
+    <outline type="rss" xmlUrl="http://gromnitsky.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://gromnitsky.blogspot.com/search/label/emacs" title="Alex Gromnitsky's blog"/>
+    <outline type="rss" xmlUrl="https://ddavis.io/index.xml" htmlUrl="https://ddavis.io/" title="ddavis.io"/>
+    <outline type="rss" xmlUrl="http://www.masteringemacs.org/feed" htmlUrl="http://www.masteringemacs.org/feed" title="Mastering Emacs"/>
+    <outline type="rss" xmlUrl="https://ikaruga2.wordpress.com/tag/emacs/feed/" htmlUrl="https://ikaruga2.wordpress.com/" title="Emacs &#x2013; Ikaruga 2"/>
+    <outline type="rss" xmlUrl="http://feeds2.feedburner.com/emacsblog" htmlUrl="http://emacsblog.org/" title="M-x all-things-emacs"/>
+    <outline type="rss" xmlUrl="http://bloggingmath.wordpress.com/tag/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/pimpmyemacs" htmlUrl="https://sachachua.com/blog/category/emacs/feed/index.xml" title="Sacha Chua - category - emacs"/>
+    <outline type="rss" xmlUrl="https://yveszoundi.wordpress.com/tag/emacs/feed" htmlUrl="https://yveszoundi.wordpress.com/" title="emacs &#x2013; Yves Zoundi's Blog"/>
+    <outline type="rss" xmlUrl="https://tsdh.wordpress.com/tag/emacs/feed/" htmlUrl="https://tsdh.wordpress.com/" title="Emacs &#x2013; Tassilo's Blog"/>
+    <outline type="rss" xmlUrl="http://acidwords.com/emacs.xml" htmlUrl="https://acidwords.com/" title="#:acid 'words"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/emacslife" htmlUrl="http://emacslife.blogspot.com/" title="emacs life"/>
+    <outline type="rss" xmlUrl="http://floatsolutions.com/blog/category/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://www.lonecpluspluscoder.com/category/emacs/feed/" htmlUrl="https://www.lonecpluspluscoder.com/category/emacs/feed/" title="Emacs on The Lone C++ Coder's Blog"/>
+    <outline type="rss" xmlUrl="https://alexschroeder.ch/wiki/feed/full/Emacs" htmlUrl="https://alexschroeder.ch/wiki?action=journal;search=tag%3aemacs" title="Alex Schroeder: Emacs"/>
+    <outline type="rss" xmlUrl="https://l0st3d.wordpress.com/category/emacs/feed/" htmlUrl="https://l0st3d.wordpress.com/" title="Emacs &#x2013; aSetOfAllSets"/>
+    <outline type="rss" xmlUrl="https://valignatev.com/index.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/ted-roden-emacs" htmlUrl="http://blog.tedroden.com/" title="TedRoden.com"/>
+    <outline type="rss" xmlUrl="http://emacshorrors.com/feed.atom" htmlUrl="https://emacshorrors.com/" title="Emacs Horrors"/>
+    <outline type="rss" xmlUrl="http://bryan-murdock.blogspot.com/atom.xml" htmlUrl="http://bryan-murdock.blogspot.com/" title="Cyclopedia Square"/>
+    <outline type="rss" xmlUrl="https://crazythinking.wordpress.com/category/emacs/feed/" htmlUrl="https://crazythinking.wordpress.com/" title="emacs &#x2013; Crazy thinking &#x2013; Just my Weblog"/>
+    <outline type="rss" xmlUrl="http://lanxin0106.wordpress.com/category/emacs/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://kevand.wordpress.com/tag/emacs/feed/" htmlUrl="https://kevand.wordpress.com/" title="Emacs &#x2013; Kevin Anderson's Blog"/>
+    <outline type="rss" xmlUrl="http://emacsrocks.com/atom.xml" htmlUrl="http://emacsrocks.com/atom.xml" title="Emacs Rocks!"/>
+    <outline type="rss" xmlUrl="https://awhan.wordpress.com/category/emacs/feed/" htmlUrl="https://awhan.wordpress.com/" title="emacs &#x2013; Awhan Patnaik"/>
+    <outline type="rss" xmlUrl="http://emacslife.blogspot.com/feeds/posts/default" htmlUrl="http://emacslife.blogspot.com/" title="emacs life"/>
+    <outline type="rss" xmlUrl="http://nullprogram.com/tags/emacs/feed/" htmlUrl="https://nullprogram.com/tags/emacs/" title="Articles tagged emacs at null program"/>
+    <outline type="rss" xmlUrl="https://gongyiliao.wordpress.com/category/emacs/feed/" htmlUrl="https://gongyiliao.wordpress.com/" title="Emacs &#x2013; Gong-Yi's SandBox@WordPress"/>
+    <outline type="rss" xmlUrl="https://jawher.wordpress.com/category/emacs/feed/" htmlUrl="https://jawher.wordpress.com/" title="emacs &#x2013; Jawher's Blog"/>
+    <outline type="rss" xmlUrl="http://ergoemacs.org/emacs/blog.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://tincman.wordpress.com/tag/emacs/feed/" htmlUrl="https://tincman.wordpress.com/" title="emacs &#x2013; Mathletic"/>
+    <outline type="rss" xmlUrl="http://sachachua.com/blog/category/emacs/feed" htmlUrl="https://sachachua.com/blog/category/emacs/feed/index.xml" title="Sacha Chua - category - emacs"/>
+    <outline type="rss" xmlUrl="http://blog.printf.net/feed/" htmlUrl="https://blog.printf.net/" title="Chris Ball"/>
+    <outline type="rss" xmlUrl="https://www.topbug.net/blog/category/programming-tools/emacs/feed" htmlUrl="https://www.topbug.net/" title="Emacs Archives - Top Bug Net"/>
+    <outline type="rss" xmlUrl="http://subtech.g.hatena.ne.jp/antipop/rss2" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://martinralbrecht.wordpress.com/category/emacs/feed/atom/" htmlUrl="https://martinralbrecht.wordpress.com/" title="emacs &#x2013; malb::blog"/>
+    <outline type="rss" xmlUrl="http://dorophone.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://dorophone.blogspot.com/search/label/emacs" title="Dorophone"/>
+    <outline type="rss" xmlUrl="http://alexott.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://alexott.blogspot.com/search/label/emacs" title="Alex Ott's blog"/>
+    <outline type="rss" xmlUrl="https://seeknuance.com/tag/emacs/feed/" htmlUrl="https://seeknuance.com/" title="Emacs &#x2013; Seek Nuance"/>
+    <outline type="rss" xmlUrl="http://kanis.fr/blog-emacs.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://keramida.wordpress.com/category/emacs/feed/" htmlUrl="https://keramida.wordpress.com/" title="Emacs &#x2013; What keramida said&#x2026;"/>
+    <outline type="rss" xmlUrl="http://endlessparentheses.com/atom-planet.xml" htmlUrl="http://endlessparentheses.com/atom-planet.xml" title="Endless Parentheses"/>
+    <outline type="rss" xmlUrl="http://blog.danielgempesaw.com/tagged/planet-emacsen/rss" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://ekaschalk.github.io/categories/emacs/index.xml" htmlUrl="https://ekaschalk.github.io/categories/emacs/" title="emacs on Modern Emacs"/>
+    <outline type="rss" xmlUrl="https://curiousprogrammer.wordpress.com/tag/emacs/feed/atom/" htmlUrl="https://curiousprogrammer.wordpress.com/" title="Emacs &#x2013; A Curious Programmer"/>
+    <outline type="rss" xmlUrl="http://technomancy.us/feed/atom" htmlUrl="https://technomancy.us/" title="Technomancy"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/emacsrookiecom" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://dialectical-computing.de/blog/emacs.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://muublog.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://muublog.blogspot.com/search/label/emacs" title="MuuBlog"/>
+    <outline type="rss" xmlUrl="http://matt.hackinghistory.ca/blog/feed/atom/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://emacs.cafe/feed.xml" htmlUrl="https://emacs.cafe/" title="Emacs caf&#xE9;"/>
+    <outline type="rss" xmlUrl="https://netflux.wordpress.com/tag/emacs/feed/" htmlUrl="https://netflux.wordpress.com/" title="emacs &#x2013; Graphs, Networks, and Communities in Flux"/>
+    <outline type="rss" xmlUrl="https://kuniganotas.wordpress.com/category/emacs/feed" htmlUrl="https://kuniganotas.wordpress.com/" title="emacs &#x2013; Notes on software development"/>
+    <outline type="rss" xmlUrl="https://kuniganotas.wordpress.com/category/emacs/feed/" htmlUrl="https://kuniganotas.wordpress.com/" title="emacs &#x2013; Notes on software development"/>
+    <outline type="rss" xmlUrl="https://scripter.co/categories/emacs/atom.xml" htmlUrl="https://scripter.co/categories/emacs/jf2feed.json" title="emacs on A Scripter's Notes"/>
+    <outline type="rss" xmlUrl="https://rvfblog.wordpress.com/category/emacs/feed/" htmlUrl="https://rvfblog.wordpress.com/" title="Emacs &#x2013; Rafael's blog"/>
+    <outline type="rss" xmlUrl="https://emacsfodder.github.io/atom.xml" htmlUrl="https://emacsfodder.github.io/atom.xml" title="Emacs Fodder"/>
+    <outline type="rss" xmlUrl="http://emacsmovies.org/atom.xml" htmlUrl="http://emacsmovies.org/atom.xml" title="EmacsMovies.org"/>
+    <outline type="rss" xmlUrl="http://blog.anupamsg.me/tag/emacs/feed/atom" htmlUrl="https://blog.anupamsg.me/" title="Emacs &#x2013; /usr"/>
+    <outline type="rss" xmlUrl="https://wolfgangpfaff.wordpress.com/category/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://gnufool.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://gnufool.blogspot.com/search/label/emacs" title="gnufool"/>
+    <outline type="rss" xmlUrl="http://emacsninja.com/feed.atom" htmlUrl="https://emacsninja.com/" title="Emacs Ninja"/>
+    <outline type="rss" xmlUrl="https://zingming.wordpress.com/tag/emacs/feed/" htmlUrl="https://zingming.wordpress.com/" title="emacs &#x2013; Zing-Ming"/>
+    <outline type="rss" xmlUrl="http://pozorvlak.livejournal.com/data/atom?tag=emacs" htmlUrl="https://pozorvlak.livejournal.com/" title="Beware of the Train"/>
+    <outline type="rss" xmlUrl="http://mp.vv.si/blog/category/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://sigusr2.net/tags/emacs.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://sixty-north.com/blog/category/emacs/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://robert-adesam.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://robert-adesam.blogspot.com/search/label/emacs" title="Robert Adesam"/>
+    <outline type="rss" xmlUrl="http://xeno-by.livejournal.com/data/atom?tag=emacs-en" htmlUrl="https://xeno-by.livejournal.com/" title="Excelsior"/>
+    <outline type="rss" xmlUrl="http://denverdroid.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://denverdroid.blogspot.com/search/label/emacs" title="Denver Droid"/>
+    <outline type="rss" xmlUrl="https://doxdrum.wordpress.com/tag/emacs/feed" htmlUrl="https://doxdrum.wordpress.com/" title="Emacs &#x2013; Doxdrum's Blog"/>
+    <outline type="rss" xmlUrl="https://suvayu.wordpress.com/tag/emacs/feed/" htmlUrl="https://suvayu.wordpress.com/" title="emacs &#x2013; sHoUt wid Suvayu"/>
+    <outline type="rss" xmlUrl="https://blog.lnx.cx/category/emacs/feed/" htmlUrl="https://blog.lnx.cx/" title="Emacs &#x2013; Technitribe"/>
+    <outline type="rss" xmlUrl="http://blog.chmouel.com/category/emacs/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://tromey.com/elpa/elpa.rss" htmlUrl="http://tromey.com/elpa/" title="ELPA News"/>
+    <outline type="rss" xmlUrl="http://blog.jorgenschaefer.de/feeds/posts/default/-/Emacs" htmlUrl="http://blog.jorgenschaefer.de/search/label/Emacs" title="Jorgen&#x2019;s Weblog"/>
+    <outline type="rss" xmlUrl="http://nongeekrecipes.wordpress.com/category/emacs-and-friends/feed/" htmlUrl="https://nongeekrecipes.wordpress.com/" title="Emacs and friends &#x2013; Non Geek Recipes"/>
+    <outline type="rss" xmlUrl="http://occident.us/category/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://baongoc124.wordpress.com/category/emacs/feed/" htmlUrl="https://baongoc124.wordpress.com/" title="emacs &#x2013; baongoc124"/>
+    <outline type="rss" xmlUrl="https://zeekat.nl/news/tag/emacs/index.rss" htmlUrl="https://zeekat.nl/news/tag/emacs/index.rss" title="Zeekat.nl news tagged 'emacs'"/>
+    <outline type="rss" xmlUrl="https://axelio.wordpress.com/category/emacs/feed/" htmlUrl="https://axelio.wordpress.com/" title="Emacs &#x2013; axelio"/>
+    <outline type="rss" xmlUrl="http://prodissues.com/category/emacs-geeking/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://qiita.com/tags/Emacs/feed" htmlUrl="https://qiita.com/" title="Emacs&#x30BF;&#x30B0;&#x304C;&#x4ED8;&#x3051;&#x3089;&#x308C;&#x305F;&#x65B0;&#x7740;&#x8A18;&#x4E8B; - Qiita"/>
+    <outline type="rss" xmlUrl="https://jonathancamp.com/tag/emacs/feed/" htmlUrl="https://jonathancamp.com/" title="emacs &#x2013; Web Notes and Ramblings"/>
+    <outline type="rss" xmlUrl="http://jr0cket.co.uk/categories/emacs/atom.xml" htmlUrl="http://jr0cket.co.uk/categories/emacs/atom.xml" title="jr0cket"/>
+    <outline type="rss" xmlUrl="http://tehom-blog.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://tehom-blog.blogspot.com/search/label/emacs" title="Tehom"/>
+    <outline type="rss" xmlUrl="https://www.hasecke.eu/index.xml" htmlUrl="https://www.hasecke.eu/" title="blog | hasecke"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/GotEmacs" htmlUrl="http://emacsworld.blogspot.com/" title="Got Emacs?"/>
+    <outline type="rss" xmlUrl="http://www.stefanom.org/tag/emacs/feed" htmlUrl="http://www.stefanom.org/" title="emacs &#x2013; http://www.stefanom.org"/>
+    <outline type="rss" xmlUrl="http://blog.binchen.org/categories/emacs.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://ofosos.org/tag/emacs/rss/" htmlUrl="https://ofosos.org/" title="emacs - ofosos.org"/>
+    <outline type="rss" xmlUrl="http://whattheemacsd.com/atom.xml" htmlUrl="http://whattheemacsd.com/atom.xml" title="What the .emacs.d!?"/>
+    <outline type="rss" xmlUrl="https://stardiviner.github.io/Blog/index.xml" htmlUrl="https://stardiviner.github.io/" title="An amateurish coder's blog"/>
+    <outline type="rss" xmlUrl="http://emacspeak.blogspot.com/atom.xml" htmlUrl="https://emacspeak.blogspot.com/" title="EMACSPEAK  The Complete Audio Desktop"/>
+    <outline type="rss" xmlUrl="https://camdez.com/blog/categories/emacs/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://thestandardoutput.com/tag/emacs.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://emacsworld.blogspot.com/feeds/posts/default" htmlUrl="http://emacsworld.blogspot.com/" title="Got Emacs?"/>
+    <outline type="rss" xmlUrl="http://emacsredux.com/atom.xml" htmlUrl="https://emacsredux.com/" title="Emacs Redux"/>
+    <outline type="rss" xmlUrl="http://www.modernemacs.com/index.xml" htmlUrl="https://ekaschalk.github.io/" title="Modern Emacs on Modern Emacs"/>
+    <outline type="rss" xmlUrl="http://tess.oconnor.cx/feed;tag%3Demacs" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://emacsnyc.org/atom.xml" htmlUrl="http://emacsnyc.org/atom.xml" title="(emacs-nyc)"/>
+    <outline type="rss" xmlUrl="https://draptik.wordpress.com/tag/emacs/feed/" htmlUrl="https://draptik.wordpress.com/" title="emacs &#x2013; Draptik's Blog"/>
+    <outline type="rss" xmlUrl="http://emacsair.me.s3-website.eu-central-1.amazonaws.com/feed.xml" htmlUrl="https://emacsair.me/" title="Emacsair"/>
+    <outline type="rss" xmlUrl="https://emacsair.me/feed.xml" htmlUrl="https://emacsair.me/" title="Emacsair"/>
+    <outline type="rss" xmlUrl="https://panduwana.wordpress.com/category/emacs/feed/" htmlUrl="https://panduwana.wordpress.com/" title="emacs &#x2013; PLEASE READ BEFORE SHARING"/>
+    <outline type="rss" xmlUrl="http://oremacs.com/atom.xml" htmlUrl="http://oremacs.com/atom.xml" title="(or emacs"/>
+    <outline type="rss" xmlUrl="https://manandbytes.wordpress.com/tag/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://whatthefuck.computer/rss.xml" htmlUrl="http://whatthefuck.computer/" title="Computer :("/>
+    <outline type="rss" xmlUrl="https://www.diegoberrocal.com/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://nickdrozd.github.io/feed.xml" htmlUrl="https://nickdrozd.github.io/" title="Something Something Programming"/>
+    <outline type="rss" xmlUrl="https://manuel-uberti.github.io/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://thewanderingcoder.com/category/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://www.wisdomandwonder.com/tag/emacs/feed" htmlUrl="https://www.wisdomandwonder.com/" title="Emacs &#x2013; Wisdom And Wonder"/>
+    <outline type="rss" xmlUrl="https://punchcard.wordpress.com/tag/emacs/feed/" htmlUrl="https://punchcard.wordpress.com/" title="emacs &#x2013; Punch Card"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/emacsblog" htmlUrl="http://emacsblog.org/" title="M-x all-things-emacs"/>
+    <outline type="rss" xmlUrl="https://techleaves.wordpress.com/tag/emacs/feed/" htmlUrl="https://techleaves.wordpress.com/" title="emacs &#x2013; Tech Leaves"/>
+    <outline type="rss" xmlUrl="http://sxemacs-en.blogspot.com/feeds/posts/default" htmlUrl="http://sxemacs-en.blogspot.com/" title="SXEmacs-en"/>
+    <outline type="rss" xmlUrl="http://aaronhawley.livejournal.com/data/atom" htmlUrl="https://aaronhawley.livejournal.com/" title="refusal computing"/>
+    <outline type="rss" xmlUrl="https://jugglingbits.wordpress.com/tag/emacs/feed/" htmlUrl="https://jugglingbits.wordpress.com/" title="emacs &#x2013; Juggling Bits"/>
+    <outline type="rss" xmlUrl="https://hbfs.wordpress.com/category/emacs/feed/" htmlUrl="https://hbfs.wordpress.com/" title="emacs &#x2013; Harder, Better, Faster, Stronger"/>
+    <outline type="rss" xmlUrl="https://hbfs.wordpress.com/category/emacs/feed" htmlUrl="https://hbfs.wordpress.com/" title="emacs &#x2013; Harder, Better, Faster, Stronger"/>
+    <outline type="rss" xmlUrl="http://splash-of-open-sauce.blogspot.com/feeds/posts/default/-/planetemacsen" htmlUrl="http://splash-of-open-sauce.blogspot.com/search/label/planetemacsen" title="Open Sauce"/>
+    <outline type="rss" xmlUrl="https://hexmode.com/tag/emacs/feed" htmlUrl="https://hexmode.com/" title="emacs &#x2013; Entries in Life"/>
+    <outline type="rss" xmlUrl="http://echosa.github.io/blog/categories/emacs/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://medium.com/feed/tag/emacs" htmlUrl="https://medium.com/tag/emacs/latest?source=rss------emacs-5" title="Emacs on Medium"/>
+    <outline type="rss" xmlUrl="http://www.bennee.com/~alex/blog/tag/emacs/feed" htmlUrl="https://www.bennee.com/~alex/" title="Alex's Adventures on the Infobhan - emacs"/>
+    <outline type="rss" xmlUrl="http://psung.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://psung.blogspot.com/search/label/emacs" title="I Still Know What You Learned Last Summer"/>
+    <outline type="rss" xmlUrl="http://yoo2080.wordpress.com/category/emacs/feed" htmlUrl="https://yoo2080.wordpress.com/" title="Emacs &#x2013; Yoo Box"/>
+    <outline type="rss" xmlUrl="https://iloveemacs.wordpress.com/feed" htmlUrl="https://iloveemacs.wordpress.com/" title="I love Emacs"/>
+    <outline type="rss" xmlUrl="https://chopmode.wordpress.com/category/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://scottfrazersblog.blogspot.com/feeds/posts/default" htmlUrl="http://scottfrazersblog.blogspot.com/" title="Scott Frazer's Blog"/>
+    <outline type="rss" xmlUrl="http://justinsboringpage.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://justinsboringpage.blogspot.com/search/label/emacs" title="justinhj's coding blog"/>
+    <outline type="rss" xmlUrl="https://zhangda.wordpress.com/feed/" htmlUrl="https://zhangda.wordpress.com/" title="Da's recipes on Emacs, IT, and more"/>
+    <outline type="rss" xmlUrl="http://mbork.pl/?action=rss;rcfilteronly=CategoryEmacs;all=0;showedit=0;title=%20Content%20AND%20Presentation" htmlUrl="http://mbork.pl/Homepage" title="Marcin Borkowski:  Content AND Presentation"/>
+    <outline type="rss" xmlUrl="https://joshrollinswrites.com/emacsorg/index.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://mnemonikk.org/feed/" htmlUrl="https://mnemonikk.org/" title="mnemonikk.org"/>
+    <outline type="rss" xmlUrl="https://feeds.feedburner.com/tuxicity-emacs" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/tuxicity-emacs" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://ignaciopp.wordpress.com/tag/emacs/feed/" htmlUrl="https://ignaciopp.wordpress.com/" title="emacs &#x2013; Nachopp's Blog"/>
+    <outline type="rss" xmlUrl="https://fuco1.github.io/rss.xml" htmlUrl="https://fuco1.github.io/" title="Matus Goljer (Fuco1)"/>
+    <outline type="rss" xmlUrl="https://mousecradle.wordpress.com/tag/emacs/feed/" htmlUrl="https://mousecradle.wordpress.com/" title="Emacs &#x2013; The Mouse's cradle"/>
+    <outline type="rss" xmlUrl="http://emacsist.com/rss" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://tsengf.blogspot.com/feeds/posts/default/-/emacs" htmlUrl="http://tsengf.blogspot.com/search/label/emacs" title="Anything goes"/>
+    <outline type="rss" xmlUrl="https://vocalfolds.wordpress.com/category/emacs/feed/" htmlUrl="https://vocalfolds.wordpress.com/" title="Emacs &#x2013; The days we watch the blue sky"/>
+    <outline type="rss" xmlUrl="https://calltopower.wordpress.com/tag/emacs/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://www.spacjer.com/emacs/feed.xml" htmlUrl="https://www.spacjer.com/" title="Rafal Spacjer blog"/>
+    <outline type="rss" xmlUrl="http://davazp.net/feeds/emacs.xml" htmlUrl="http://davazp.net/feeds/emacs.xml" title="David V&#xE1;zquez"/>
+    <outline type="rss" xmlUrl="http://emacsblog.org/feed/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://arunsag.wordpress.com/category/emacs/feed/" htmlUrl="https://arunsag.wordpress.com/" title="emacs &#x2013; Arun's blog"/>
+    <outline type="rss" xmlUrl="http://emacstidbits.blogspot.com/atom.xml" htmlUrl="http://emacstidbits.blogspot.com/" title="#emacs tidbits"/>
+    <outline type="rss" xmlUrl="https://blog.davep.org/feed.xml" htmlUrl="http://blog.davep.org/" title="blog.davep.org"/>
+    <outline type="rss" xmlUrl="https://hookrace.net/blog/feed/" htmlUrl="https://hookrace.net/blog/feed/" title="HookRace Blog"/>
+    <outline type="rss" xmlUrl="https://writepermission.com/rss.xml" htmlUrl="https://writepermission.com/" title="rw-r--r-- | writepermission.com"/>
+    <outline type="rss" xmlUrl="https://kisaragi-hiu.com/feeds/all.atom.xml" htmlUrl="https://kisaragi-hiu.com/" title="Home on Kisaragi Hiu"/>
+    <outline type="rss" xmlUrl="https://jingsi.space/index.xml" htmlUrl="https://jingsi.space/index.xml" title="jingsi.space"/>
+    <outline type="rss" xmlUrl="https://sirsharpest.github.io/rss.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://www.wisdomandwonder.com/feed" htmlUrl="https://www.wisdomandwonder.com/" title="Wisdom And Wonder"/>
+    <outline type="rss" xmlUrl="http://www.wilfred.me.uk/rss.xml" htmlUrl="http://www.wilfred.me.uk/" title="Wilfred Hughes::Blog"/>
+    <outline type="rss" xmlUrl="http://www.verona.se/index.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://www.suenkler.info/feed" htmlUrl="https://www.suenkler.info/rss/blogfeed/" title="Hendrik S&#xFC;nkler | Weblog"/>
+    <outline type="rss" xmlUrl="http://www.macs.hw.ac.uk/~rs46/rss.xml" htmlUrl="https://www.macs.hw.ac.uk/~rs46" title="www.macs.hw.ac.uk/~rs46"/>
+    <outline type="rss" xmlUrl="http://www.dawnofthedata.com/feeds/posts/default" htmlUrl="http://www.dawnofthedata.com/" title="Dawn of the Data"/>
+    <outline type="rss" xmlUrl="http://www.clarkdonley.com/index.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://writequit.org/blog/feed/index.html" htmlUrl="http://writequit.org/blog" title="writequit (:wq)"/>
+    <outline type="rss" xmlUrl="http://williambert.online/atom.xml" htmlUrl="http://williambert.online/atom.xml" title="William Bert"/>
+    <outline type="rss" xmlUrl="http://thescratchcastle.com/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://tech.memoryimprintstudio.com/feed/" htmlUrl="http://tech.memoryimprintstudio.com/" title="Emacs, Arduino, Raspberry Pi, Linux and Programming etc"/>
+    <outline type="rss" xmlUrl="https://zhangda.wordpress.com/feed" htmlUrl="https://zhangda.wordpress.com/" title="Da's recipes on Emacs, IT, and more"/>
+    <outline type="rss" xmlUrl="https://yoo2080.wordpress.com/feed" htmlUrl="https://yoo2080.wordpress.com/" title="Yoo Box"/>
+    <outline type="rss" xmlUrl="https://github.com/xuchunyang/blog/commits/master.atom" htmlUrl="https://github.com/xuchunyang/blog/commits/master" title="Recent Commits to blog:master"/>
+    <outline type="rss" xmlUrl="https://www.blogger.com/feeds/3992530807750384868/posts/default/-/new" htmlUrl="http://emacs-fu.blogspot.com/search/label/new" title="emacs-fu"/>
+    <outline type="rss" xmlUrl="https://vxlabs.com/feed" htmlUrl="https://vxlabs.com/" title="vxlabs"/>
+    <outline type="rss" xmlUrl="https://github.com/tuhdo/tuhdo.github.io/commits/master.atom" htmlUrl="https://github.com/tuhdo/tuhdo.github.io/commits/master" title="Recent Commits to tuhdo.github.io:master"/>
+    <outline type="rss" xmlUrl="https://tsdh.wordpress.com/feed" htmlUrl="https://tsdh.wordpress.com/" title="Tassilo's Blog"/>
+    <outline type="rss" xmlUrl="https://taingram.org/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://streakycobra.github.io/rss.xml" htmlUrl="https://streakycobra.github.io/" title="Why doing it the simple way?"/>
+    <outline type="rss" xmlUrl="https://storax.github.io/rss.xml" htmlUrl="https://storax.github.io/" title="Storax"/>
+    <outline type="rss" xmlUrl="https://ryuslash.org/rss.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://ogbe.net/blog.xml" htmlUrl="https://ogbe.net/" title="Blog - Dennis Ogbe's Personal Website"/>
+    <outline type="rss" xmlUrl="https://mwfogleman.github.io/feed.xml" htmlUrl="http://mwfogleman.github.io/" title="rejoyce"/>
+    <outline type="rss" xmlUrl="https://manuel-uberti.github.io/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://lars.ingebrigtsen.no/feed" htmlUrl="https://lars.ingebrigtsen.no/" title="Random Thoughts"/>
+    <outline type="rss" xmlUrl="https://kozikow.com/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://keramida.wordpress.com/feed" htmlUrl="https://keramida.wordpress.com/" title="What keramida said&#x2026;"/>
+    <outline type="rss" xmlUrl="https://heikkil.github.io/rss.xml" htmlUrl="http://heikkil.github.io/" title="Heikki @ home"/>
+    <outline type="rss" xmlUrl="http://francismurillo.github.io/hacker/feed.xml" htmlUrl="http://francismurillo.github.io/" title="Fn/Log Hacker"/>
+    <outline type="rss" xmlUrl="https://github.com/sigma/yann.hodique.info/commits/master.atom" htmlUrl="https://github.com/sigma/yann.hodique.info/commits/master" title="Recent Commits to yann.hodique.info:master"/>
+    <outline type="rss" xmlUrl="https://feeds.feedburner.com/SanityInc" htmlUrl="https://www.sanityinc.com/" title="sanity, inc."/>
+    <outline type="rss" xmlUrl="https://feeds.feedburner.com/KrisJenkinsBlog" htmlUrl="http://blog.jenkster.com/" title="Kris Jenkins' Blog"/>
+    <outline type="rss" xmlUrl="https://ekaschalk.github.io//index.xml" htmlUrl="https://ekaschalk.github.io/" title="Modern Emacs on Modern Emacs"/>
+    <outline type="rss" xmlUrl="https://dgutov.github.io/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://danlamanna.com/feeds/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://scottfrazersblog.blogspot.com/feeds/posts/default" htmlUrl="http://scottfrazersblog.blogspot.com/" title="Scott Frazer's Blog"/>
+    <outline type="rss" xmlUrl="https://ceving.blogspot.com/feeds/posts/default" htmlUrl="https://ceving.blogspot.com/" title="ceving"/>
+    <outline type="rss" xmlUrl="https://catern.com/feed.xml" htmlUrl="http://catern.com/" title="Blog"/>
+    <outline type="rss" xmlUrl="https://blog.aaronbieber.com/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://bbbscarter.wordpress.com/feed" htmlUrl="https://bbbscarter.wordpress.com/" title="Nerdgasm"/>
+    <outline type="rss" xmlUrl="http://psachin.github.io/feed.xml" htmlUrl="https://psachin.github.io//" title="psachin.github.io"/>
+    <outline type="rss" xmlUrl="http://prog-elisp.blogspot.com/feeds/posts/default" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://nullprogram.com/feed" htmlUrl="https://nullprogram.com/" title="null program"/>
+    <outline type="rss" xmlUrl="http://notes.neeasade.net/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://noctuid.github.io/atom.xml" htmlUrl="http://noctuid.github.io/atom.xml" title="Nocturnal Artifice"/>
+    <outline type="rss" xmlUrl="http://nicolas-petton.fr/blog/index.xml" htmlUrl="http://nicolas-petton.fr/blog/" title="Blog posts and notes."/>
+    <outline type="rss" xmlUrl="http://muublog.blogspot.com/feeds/posts/default" htmlUrl="http://muublog.blogspot.com/" title="MuuBlog"/>
+    <outline type="rss" xmlUrl="http://mjwall.com/atom.xml" htmlUrl="http://mjwall.com/atom.xml" title="mjwall.com"/>
+    <outline type="rss" xmlUrl="http://mbork.pl/?action=rss" htmlUrl="http://mbork.pl/Homepage" title="Marcin Borkowski: Homepage"/>
+    <outline type="rss" xmlUrl="http://lars.ingebrigtsen.no/feed" htmlUrl="https://lars.ingebrigtsen.no/" title="Random Thoughts"/>
+    <outline type="rss" xmlUrl="http://kitchingroup.cheme.cmu.edu/blog/feed/atom" htmlUrl="https://kitchingroup.cheme.cmu.edu/blog" title="The Kitchin Research Group"/>
+    <outline type="rss" xmlUrl="http://kazyos.hatenablog.com/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://jr0cket.co.uk/atom.xml" htmlUrl="http://jr0cket.co.uk/atom.xml" title="jr0cket"/>
+    <outline type="rss" xmlUrl="http://jamesporter.me/feeds/rss.xml" htmlUrl="http://jamesporter.me/" title="James Porter"/>
+    <outline type="rss" xmlUrl="http://iqbalansari.me/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://harryrschwartz.com/atom.xml" htmlUrl="http://harryrschwartz.com/atom.xml" title="Harry R. Schwartz"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/WisdomAndWonder?format=xml" htmlUrl="https://www.wisdomandwonder.com/" title="Wisdom And Wonder"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/KrisJenkinsBlog?format=xml" htmlUrl="http://blog.jenkster.com/" title="Kris Jenkins' Blog"/>
+    <outline type="rss" xmlUrl="http://feeds.feedburner.com/alexott" htmlUrl="http://alexott.blogspot.com/" title="Alex Ott's blog"/>
+    <outline type="rss" xmlUrl="http://fasciism.com/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://ericjmritz.name/feed" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://endlessparentheses.com/atom.xml" htmlUrl="http://endlessparentheses.com/atom.xml" title="Endless Parentheses"/>
+    <outline type="rss" xmlUrl="https://elephly.net/feed.xml" htmlUrl="https://elephly.net/feed.xml" title="Rekado"/>
+    <outline type="rss" xmlUrl="http://edward.oconnor.cx/feed" htmlUrl="https://tess.oconnor.cx/" title="Theresa O&#x2019;Connor"/>
+    <outline type="rss" xmlUrl="http://dthompson.us/feeds/all.atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://draketo.de/rss.xml" htmlUrl="https://www.draketo.de/" title="Zwillingssterns Weltenwald"/>
+    <outline type="rss" xmlUrl="http://diobla.info/blog-archive" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://dgutov.github.io/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://dale.io/feed.xml" htmlUrl="https://dale.io/" title="dale.io"/>
+    <outline type="rss" xmlUrl="http://cupfullofcode.com/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://correl.phoenixinquis.net/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://chrismccombs.net/feed" htmlUrl="https://chrismccombs.net/" title="Chris McCombs"/>
+    <outline type="rss" xmlUrl="http://chrisdone.com/rss.xml" htmlUrl="https://chrisdone.com/" title="Chris Done's Blog"/>
+    <outline type="rss" xmlUrl="http://ceving.blogspot.com/feeds/posts/default" htmlUrl="http://ceving.blogspot.com/" title="ceving"/>
+    <outline type="rss" xmlUrl="http://cestlaz.github.io/rss.xml" htmlUrl="https://cestlaz.github.io/" title="C'est la Z"/>
+    <outline type="rss" xmlUrl="http://cestdiego.github.io/atom.xml" htmlUrl="http://cestdiego.github.io/atom.xml" title="Diego Berrocal"/>
+    <outline type="rss" xmlUrl="http://bzg.fr/blog.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://camdez.com/blog/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://amitp.blogspot.com/feeds/posts/default" htmlUrl="https://amitp.blogspot.com/" title="Amit's Thoughts"/>
+    <outline type="rss" xmlUrl="http://bastibe.de/rss.xml" htmlUrl="https://bastibe.de/" title="Bastibe.de"/>
+    <outline type="rss" xmlUrl="http://batsov.com/atom.xml" htmlUrl="https://batsov.com/" title="(think)"/>
+    <outline type="rss" xmlUrl="http://bling.github.io/index.xml" htmlUrl="http://bling.github.io/" title="bling on software"/>
+    <outline type="rss" xmlUrl="http://blog.aaronbieber.com/feed.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://blog.binchen.org/rss.xml" htmlUrl="http://blog.binchen.org/" title="Chen's blog"/>
+    <outline type="rss" xmlUrl="http://blog.jorgenschaefer.de/feeds/posts/default" htmlUrl="http://blog.jorgenschaefer.de/" title="Jorgen&#x2019;s Weblog"/>
+    <outline type="rss" xmlUrl="http://blog.josephwilk.net/atom.xml" htmlUrl="http://blog.josephwilk.net/atom.xml" title="Joseph Wilk"/>
+    <outline type="rss" xmlUrl="http://blog.plover.com/index.rss" htmlUrl="https://blog.plover.com/" title="The Universe of Discourse"/>
+    <outline type="rss" xmlUrl="http://blog.refu.co/?feed=rss2" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://blog.waymondo.com/atom.xml" htmlUrl="http://blog.waymondo.com/atom.xml" title="Way Mondo"/>
+    <outline type="rss" xmlUrl="http://blog.yitang.uk/atom.xml" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://tromey.com/blog/?cat=11&amp;amp;feed=rss2" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="http://unix.stackexchange.com/feeds/tag?tagnames=emacs&amp;amp;amp;sort=newest" htmlUrl="https://unix.stackexchange.com/questions/tagged/?tagnames=emacs&amp;sort=active" title="Active questions tagged emacs - Unix &amp; Linux Stack Exchange"/>
+    <outline type="rss" xmlUrl="http://irreal.org/blog/?tag=emacs&amp;amp;feed=rss2" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://www.fitzsim.org/blog/?feed=rss2&amp;amp;cat=3" htmlUrl="https://www.fitzsim.org/blog" title="fitzsim's development log"/>
+    <outline type="rss" xmlUrl="http://wenshanren.org/?cat=10&amp;amp;tag=en&amp;amp;feed=rss2" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://planet.emacslife.com/atom.xml" htmlUrl="https://planet.emacslife.com/atom.xml" title="Planet Emacslife"/>
   </body>
 </opml>
