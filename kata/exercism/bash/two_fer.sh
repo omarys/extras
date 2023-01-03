@@ -1,9 +1,8 @@
-two_fer () {
-  if [ -n $1 ];
-  then
-      echo "One for ${1}, one for me."
+two_fer() {
+  if [ $# -gt 0 ] && [ -n "$1" ]; then
+    echo "One for ${1}, one for me."
   else
-      echo "One for you, one for me."
+    echo "One for you, one for me."
   fi
 }
 
