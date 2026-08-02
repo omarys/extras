@@ -22,7 +22,6 @@ enum preonic_layers { _QWERTY, _LOWER, _RAISE, _ADJUST };
 enum preonic_keycodes { QWERTY = SAFE_RANGE, LOWER, RAISE, BACKLIT };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
     /* Qwerty
      * ,-----------------------------------------------------------------------------------.
      * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |
@@ -132,7 +131,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MU_OFF, MI_ON, MI_OFF, _______, _______, _______, _______, KC_SCRL,
         _______, _______, _______, _______, _______, _______, _______, _______,
         BL_TOGG, BL_DOWN, BL_UP, KC_NUM)
-
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -176,7 +174,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return false;
   }
   return true;
-};
+}
 
 bool muse_mode = false;
 uint8_t last_muse_note = 0;

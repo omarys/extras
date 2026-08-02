@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 two_fer() {
   if [ $# -gt 0 ] && [ -n "$1" ]; then
     echo "One for ${1}, one for me."

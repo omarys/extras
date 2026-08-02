@@ -1,0 +1,10 @@
+[tools]
+python = "3.14"
+java = "21"
+"pipx:pre-commit" = "latest"
+"aqua:trufflesecurity/trufflehog" = "latest"
+"aqua:astral-sh/ruff" = "latest"
+"conda:clang-tools" = "latest"
+"conda:chktex" = "latest"
+"aqua:koalaman/shellcheck" = "latest"
+"pipx:yamllint" = "latest"

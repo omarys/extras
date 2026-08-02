@@ -1,0 +1,47 @@
+% ATS-friendly resume: single-column, text-first, and machine-readable.
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{needspace}
+\usepackage{titlesec}
+\usepackage{helvet}
+\input{glyphtounicode}
+
+\renewcommand{\familydefault}{\sfdefault}
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Scott O'Mary Resume},
+  pdfauthor={Scott O'Mary},
+  pdfsubject={DevSecOps and Software Engineering},
+  pdfkeywords={DevSecOps, Cloud Security, AWS, Kubernetes, Terraform, Software Engineering}
+}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0pt}{}
+  [\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+\input{custom-commands}
+
+\begin{document}
+\sloppy
+
+\input{src/heading}
+\input{src/summary}
+\input{src/skills}
+\input{src/experience}
+\input{src/projects}
+\input{src/education}
+
+\end{document}

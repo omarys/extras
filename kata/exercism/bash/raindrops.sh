@@ -1,32 +1,32 @@
 #!/usr/bin/env sh
 
 pling() {
-    if [ $(($1 % 3 == 0)) ]; then
-        echo "Pling"
+    number=$1
+    if [ $((number % 3)) -eq 0 ]; then
+        printf %s "Pling"
     fi
 }
 
 plang() {
-    if [ $(($1 % 5 == 0)) ]; then
-        echo "Plang"
+    number=$1
+    if [ $((number % 5)) -eq 0 ]; then
+        printf %s "Plang"
     fi
 }
 
 plong() {
-    if [ $(($1 % 7 == 0)) ]; then
-        echo "Plong"
+    number=$1
+    if [ $((number % 7)) -eq 0 ]; then
+        printf %s "Plong"
     fi
 }
 
 main() {
-    i=pling "$@"
-    a=plang "$@"
-    o=plong "$@"
-    raindrops="${i} ${a} ${o}"
+    raindrops="$(pling "$1")$(plang "$1")$(plong "$1")"
     if [ -z "${raindrops}" ]; then
-        echo "{$1}"
+        echo "$1"
     else
-        echo "{$raindrops}"
+        echo "${raindrops}"
     fi
 }
 

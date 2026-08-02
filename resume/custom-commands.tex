@@ -1,0 +1,25 @@
+% Text-first commands intentionally avoid tables, columns, icons, and text boxes.
+\newcommand{\resumeItem}[1]{\item #1}
+
+% Arguments: organization, dates, title, location.
+\newcommand{\resumeSubheading}[4]{%
+  \Needspace{5\baselineskip}%
+  \textbf{#1}\par
+  #3\par
+  #4 \textbar{} #2\par
+  \vspace{2pt}
+}
+
+% Arguments: project name, technologies.
+\newcommand{\resumeProjectHeading}[2]{%
+  \textbf{#1}\par
+  \textit{Technologies: #2}\par
+  \vspace{1pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{}
+\newcommand{\resumeSubHeadingListEnd}{}
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=0.2in, itemsep=1pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}

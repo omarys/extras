@@ -1,3 +1,6 @@
+# qutebrowser injects `c` and `config` when it loads this file.
+# ruff: noqa: F821
+
 c.aliases = {
     'esc': 'fake-key <Esc>', 
     'git': 'open -t github.com',

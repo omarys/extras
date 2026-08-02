@@ -1,1 +1,8 @@
 .ccls-cache/
+
+# LaTeX intermediate files (keep generated PDFs available for distribution).
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out

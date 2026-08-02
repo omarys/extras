@@ -1,0 +1,55 @@
+minimum_pre_commit_version: "4.0.0"
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=2048]
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-yaml
+      - id: check-xml
+        files: ".*\\.(opml|xml)$"
+        types: [file]
+      - id: mixed-line-ending
+        args: [--fix=no]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.1
+    hooks:
+      - id: ruff-check
+        name: ruff (Python)
+        types_or: [python, pyi]
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.11.0.1
+    hooks:
+      - id: shellcheck
+
+  - repo: https://github.com/cpplint/cpplint
+    rev: 2.0.2
+    hooks:
+      - id: cpplint
+        name: cpplint (C/C++)
+        # QMK's generated include macro and per-file license layout are valid.
+        args: ["--filter=-build/include_subdir,-legal/copyright"]
+
+  # ChkTeX is distributed as a system package rather than a Python package.
+  # Install it with your OS package manager (for example, `apt install chktex`).
+  - repo: local
+    hooks:
+      - id: chktex
+        name: chktex (LaTeX)
+        # These rules misfire on standalone macros, date/phone dashes, and
+        # glyphtounicode when ChkTeX inspects included files individually.
+        entry: chktex -q -n1 -n8 -n27
+        language: system
+        files: ".*\\.tex$"
+
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.96.0
+    hooks:
+      - id: trufflehog
+        name: trufflehog (verified secrets)

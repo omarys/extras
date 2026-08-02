@@ -2,16 +2,14 @@ def likes(names):
     who_likes_it = ""
     if len(names) > 0:
         if len(names) == 1:
-            who_likes_it = "%s likes this" % names[0]
+            who_likes_it = f"{names[0]} likes this"
         elif len(names) == 2:
-            who_likes_it = "%s and %s like this" % (names[0], names[1])
+            who_likes_it = f"{names[0]} and {names[1]} like this"
         elif len(names) == 3:
-            who_likes_it = "%s, %s and %s like this" % (names[0], names[1], names[2])
+            who_likes_it = f"{names[0]}, {names[1]} and {names[2]} like this"
         else:
-            who_likes_it = "%s, %s and %i others like this" % (
-                names[0],
-                names[1],
-                len(names) - 2,
+            who_likes_it = (
+                f"{names[0]}, {names[1]} and {len(names) - 2} others like this"
             )
         return who_likes_it
     else:
