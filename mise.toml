@@ -1,6 +1,6 @@
 [tools]
 python = "3.14"
-java = "21"
+java = "26"
 "pipx:pre-commit" = "latest"
 "aqua:trufflesecurity/trufflehog" = "latest"
 "aqua:astral-sh/ruff" = "latest"
